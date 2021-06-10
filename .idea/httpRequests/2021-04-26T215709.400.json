@@ -1,0 +1,7 @@
+{
+  "timestamp": "2021-04-26T13:57:09.266+00:00",
+  "status": 400,
+  "error": "Bad Request",
+  "message": "",
+  "path": "/register"
+}

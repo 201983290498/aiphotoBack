@@ -1,0 +1,43 @@
+{
+  "requestId": "bd0273d37956baa8",
+  "state": "OK",
+  "body": {
+  "faceStoreId": 117212,172220,
+  "faceStoreName": "hjwFaceRep",
+  "cost": 5
+  }
+}
+
+
+依赖:
+<!--处理json字符窜-->
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>fastjson</artifactId>
+      <version>1.2.76</version>
+    </dependency>
+<!--处理http协议-->
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpclient</artifactId>
+      <version>4.5.13</version>
+    </dependency>
+
+在线JSON字符粗按转java实体类网站
+
+/{cityId}
+@PathVariable()获取路径上参数
+
+
+lombook 中@Slf4j开启日志 日志类log.xxx
+
+
+restTemplate配置一个模板：
+responseEntity 获取的对象可以是ResponseEntity<String> 的返回值
+
+内容字字符窜：responseEntity.getBody()::String
+将字符窜转换成对象：
+  功能类ObjectMapper
+  函数：
+    readValue(string data,xx.class);
+

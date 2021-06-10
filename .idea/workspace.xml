@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a5f73d9b-3158-4235-a36e-c7ddae7920e0" name="默认变更列表" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/example/demo/service/_Base64PicService.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/example/demo/service/FaceService.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/example/demo/controller/_Base64PicController.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/Program/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\Program\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1rfHuvgxMOpxjAdk2ETsEJgMi9O" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="库" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.45057473" />
+    <property name="settings.editor.selected.configurable" value="database.main" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="ReaderModeSettings">
+    <option name="enabled" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\coder\Desktop\demo\src\main\java\com\example\demo\AI\entity" />
+      <recent name="C:\Users\coder\Desktop\demo\pictures" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\coder\Desktop\demo\src\main\resources\static\cjm" />
+      <recent name="C:\Users\coder\Desktop\demo\src\main\resources\static\root" />
+      <recent name="C:\Users\coder\Desktop\demo\src\main\resources\static" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.DemoApplication (1)">
+    <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.Test1" />
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AITest.deletefaceSetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.AITest" />
+      <option name="METHOD_NAME" value="deletefaceSetTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AITest.densityFace" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.AITest" />
+      <option name="METHOD_NAME" value="densityFace" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AITest.sdkTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.AITest" />
+      <option name="METHOD_NAME" value="sdkTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PicFaceTest.createTableTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.PicFaceTest" />
+      <option name="METHOD_NAME" value="createTableTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.AIPhotoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AITest.sdkTest" />
+        <item itemvalue="JUnit.PicFaceTest.createTableTest" />
+        <item itemvalue="JUnit.AITest.deletefaceSetTest" />
+        <item itemvalue="应用程序.Test1" />
+        <item itemvalue="JUnit.AITest.densityFace" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="a5f73d9b-3158-4235-a36e-c7ddae7920e0" name="默认变更列表" comment="" />
+      <created>1619360453481</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619360453481</updated>
+      <workItem from="1619360455457" duration="3952000" />
+      <workItem from="1619426407886" duration="7037000" />
+      <workItem from="1619437568162" duration="11452000" />
+      <workItem from="1619498721695" duration="7517000" />
+      <workItem from="1619510258852" duration="5229000" />
+      <workItem from="1619518558297" duration="12410000" />
+      <workItem from="1619533606506" duration="3900000" />
+      <workItem from="1619537593687" duration="419000" />
+      <workItem from="1619538269897" duration="1205000" />
+      <workItem from="1619539604239" duration="363000" />
+      <workItem from="1619540181125" duration="4705000" />
+      <workItem from="1619572175895" duration="3041000" />
+      <workItem from="1619578365726" duration="1361000" />
+      <workItem from="1619583518740" duration="1341000" />
+      <workItem from="1619589727052" duration="1512000" />
+      <workItem from="1619593414690" duration="786000" />
+      <workItem from="1619615858437" duration="610000" />
+      <workItem from="1619687049365" duration="3095000" />
+      <workItem from="1619709994409" duration="1412000" />
+      <workItem from="1619747449309" duration="691000" />
+      <workItem from="1619757583752" duration="1378000" />
+      <workItem from="1619785494666" duration="582000" />
+      <workItem from="1619828422501" duration="2174000" />
+      <workItem from="1620116980126" duration="622000" />
+      <workItem from="1620278139868" duration="184000" />
+      <workItem from="1620612611719" duration="737000" />
+      <workItem from="1620647490777" duration="5164000" />
+      <workItem from="1620714168922" duration="3815000" />
+      <workItem from="1620719798485" duration="57000" />
+      <workItem from="1620719946707" duration="5049000" />
+      <workItem from="1620729804815" duration="6772000" />
+      <workItem from="1620738317377" duration="130000" />
+      <workItem from="1620738468076" duration="8802000" />
+      <workItem from="1620779776155" duration="2686000" />
+      <workItem from="1620785554105" duration="4940000" />
+      <workItem from="1620799042989" duration="3143000" />
+      <workItem from="1620815905259" duration="698000" />
+      <workItem from="1621082713632" duration="2517000" />
+      <workItem from="1621091993387" duration="1177000" />
+      <workItem from="1621767786990" duration="61000" />
+      <workItem from="1621767876961" duration="67000" />
+      <workItem from="1621768007471" duration="23000" />
+      <workItem from="1621768161233" duration="1580000" />
+      <workItem from="1621769898674" duration="608000" />
+      <workItem from="1621771153661" duration="2677000" />
+      <workItem from="1621774028947" duration="195000" />
+      <workItem from="1621774265514" duration="52000" />
+      <workItem from="1621774690407" duration="5527000" />
+      <workItem from="1621821830762" duration="1966000" />
+      <workItem from="1621824846615" duration="9016000" />
+      <workItem from="1621859945644" duration="7657000" />
+      <workItem from="1621867843958" duration="4311000" />
+      <workItem from="1621929387518" duration="4715000" />
+      <workItem from="1621994043203" duration="1183000" />
+      <workItem from="1622008771358" duration="1000" />
+      <workItem from="1622009060651" duration="30186000" />
+      <workItem from="1622079679019" duration="462000" />
+      <workItem from="1622080215653" duration="2556000" />
+      <workItem from="1622091274918" duration="1482000" />
+      <workItem from="1622093467920" duration="6791000" />
+      <workItem from="1622106018075" duration="3408000" />
+      <workItem from="1622114512907" duration="2006000" />
+      <workItem from="1622117316201" duration="11555000" />
+      <workItem from="1622159985196" duration="601000" />
+      <workItem from="1622164335430" duration="820000" />
+      <workItem from="1622219798125" duration="2925000" />
+      <workItem from="1622254373413" duration="860000" />
+      <workItem from="1622297798805" duration="1187000" />
+      <workItem from="1622376434759" duration="653000" />
+      <workItem from="1622388474725" duration="5371000" />
+      <workItem from="1622425903495" duration="2029000" />
+      <workItem from="1622431045667" duration="874000" />
+      <workItem from="1622447975068" duration="7139000" />
+      <workItem from="1622534233840" duration="3979000" />
+      <workItem from="1622546963115" duration="1175000" />
+      <workItem from="1622684944991" duration="14521000" />
+      <workItem from="1622768291559" duration="596000" />
+      <workItem from="1622880451859" duration="529000" />
+      <workItem from="1622886351600" duration="43000" />
+      <workItem from="1623339893515" duration="52000" />
+      <workItem from="1623340333867" duration="34000" />
+      <workItem from="1623340614992" duration="57000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/repository/PictureRep.java</url>
+          <line>24</line>
+          <properties class="com.example.demo.repository.PictureRep" method="addInfoLocal">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/AI/entity/DeleteFace.java</url>
+          <line>6</line>
+          <properties class="com.example.demo.AI.entity.DeleteFace" method="getRequestId">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/PictureRepApl.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/service/PictureService.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/entity/ImageClassfication.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/tool/MyJDBCTemplate.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/demo/ToolTest.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/demo/AITest.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/_Base64PicRepApl.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="119" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
