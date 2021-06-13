@@ -3,9 +3,10 @@ package com.example.demo.entity;
 
 import lombok.Data;
 import java.util.Base64;
+import java.util.Date;
 
 @Data
-public class _Base64Picture {
+public class _Base64Picture implements Comparable<_Base64Picture>{
   private Long id;
   private String owner;
   private String categy;
@@ -15,6 +16,7 @@ public class _Base64Picture {
   //多值属性
   private String persontag;
   private Boolean ishuman;
+  private Date data;
 
   public _Base64Picture(Long id, String owner, String categy, String b64, Boolean ispublic, String picname, String persontag, Boolean ishuman) {
     this.id = id;
@@ -25,6 +27,18 @@ public class _Base64Picture {
     this.picname = picname;
     this.persontag = persontag;
     this.ishuman = ishuman;
+  }
+
+  public _Base64Picture(Long id, String owner, String categy, String b64, Boolean ispublic, String picname, String persontag, Boolean ishuman, Date data) {
+    this.id = id;
+    this.owner = owner;
+    this.categy = categy;
+    this.b64 = b64;
+    this.ispublic = ispublic;
+    this.picname = picname;
+    this.persontag = persontag;
+    this.ishuman = ishuman;
+    this.data = data;
   }
 
   public _Base64Picture() {
@@ -38,7 +52,11 @@ public class _Base64Picture {
     Base64.Decoder decoder = Base64.getDecoder();
     bytes = decoder.decode(b64);
 
-    Picture picture = new Picture(id, owner, categy, bytes, ispublic, picname, persontag, ishuman);
-    return picture;
+    return new Picture(id, owner, categy, bytes, ispublic, picname, persontag, ishuman);
+  }
+
+  @Override
+  public int compareTo(_Base64Picture o) {
+    return Math.toIntExact(data.getTime() - o.data.getTime());
   }
 }

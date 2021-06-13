@@ -15,6 +15,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.web.ServerProperties;
 import org.springframework.stereotype.Service;
 import java.io.IOException;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -80,7 +82,9 @@ public class _Base64PicService {
   }
 
   private List<_Base64Picture> _getPictureList(String username, String categy, Boolean ispublic){
-    return pictureRep.findList(username,ispublic,categy);
+    List<_Base64Picture> base64PictureList = pictureRep.findList(username,ispublic,categy);
+    Collections.sort(base64PictureList);
+    return base64PictureList;
   }
   private Boolean _addPicture(_Base64Picture picture) throws  IOException{
     picture.setId(pictureRep.findId());
@@ -135,7 +139,7 @@ public class _Base64PicService {
 
   public List<_Base64Picture> findPictrueByList(List<Long> pictureIds) {
     List<_Base64Picture> pictureList = new LinkedList<>();
-    for(Long picId:pictureIds){
+    for (Long picId : pictureIds) {
       pictureList.add(getPic(picId));
     }
     return pictureList;

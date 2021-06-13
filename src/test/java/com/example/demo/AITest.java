@@ -33,7 +33,6 @@ public class AITest {
 
   @Autowired
   private RestTemplate restTemplate;
-
   /**
    * 获取
    * @throws IOException
@@ -113,5 +112,10 @@ public class AITest {
   public void faceSearch(){
     _Base64Picture pic = base64PicRep.findById("cjmcjm", 8L);
     faceHandler.faceSearch(pic,"117300,117275");
+  }
+
+  @Test
+  public void testCreate(){
+    base64PicRep.createTable();
   }
 }

@@ -36,7 +36,7 @@ public class _Base64PicRepApl implements _Base64PicRep {
 
   @Override
   public Boolean addInfo(_Base64Picture pictrue) throws IOException {
-    jdbcTemplate.update("insert b64picture_list(id,owner,categy,ispublic,picname,personTag,ishuman,b64) values(?,?,?,?,?,?,?,?)",
+    jdbcTemplate.update("insert b64picture_list(id,owner,categy,ispublic,picname,personTag,ishuman,b64,time) values(?,?,?,?,?,?,?,?,now())",
       pictrue.getId(),pictrue.getOwner(),pictrue.getCategy(), pictrue.getIspublic(),pictrue.getPicname(),pictrue.getPersontag(),pictrue.getIshuman(),pictrue.getB64());
     return true;
   }
@@ -54,7 +54,7 @@ public class _Base64PicRepApl implements _Base64PicRep {
   @Override
   public void createTable() {
     //存储超长的文本
-    String sql = new StringBuilder().append("CREATE TABLE IF NOT EXISTS b64picture_list(\n").append("`id` BIGINT NOT NULL PRIMARY KEY,\n").append("`owner` VARCHAR(20) NOT NULL,\n").append("`categy` VARCHAR(20) NOT NULL,\n").append("`b64` MEDIUMTEXT NOT NULL,\n").append("`ispublic` BOOL DEFAULT TRUE,\n").append("`picname` VARCHAR(40) NOT NULL,\n").append("`persontag` VARCHAR(20) DEFAULT NULL,\n").append("`ishuman` BOOLEAN DEFAULT FALSE\n").append(")ENGINE=INNODB DEFAULT CHARSET=utf8;\n").toString();
+    String sql = new StringBuilder().append("CREATE TABLE IF NOT EXISTS b64picture_list(\n").append("`id` BIGINT NOT NULL PRIMARY KEY,\n").append("`owner` VARCHAR(20) NOT NULL,\n").append("`categy` VARCHAR(20) NOT NULL,\n").append("`b64` MEDIUMTEXT NOT NULL,\n").append("`ispublic` BOOL DEFAULT TRUE,\n").append("`picname` VARCHAR(40) NOT NULL,\n").append("`persontag` VARCHAR(20) DEFAULT NULL,\n").append("`ishuman` BOOLEAN DEFAULT FALSE,\n").append("`time` date not null\n").append(")ENGINE=INNODB DEFAULT CHARSET=utf8;\n").toString();
     jdbcTemplate.update(sql);
   }
 
