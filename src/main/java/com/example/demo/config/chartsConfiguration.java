@@ -1,11 +1,13 @@
 package com.example.demo.config;
 
 import com.example.demo.AI.entity.FaceSet;
+import com.example.demo.AI.tool.AIClassify;
 import com.example.demo.AI.tool.FaceHandler;
 import com.example.demo.entity.ImageClassfication;
 import com.example.demo.entity.Picture;
 import com.example.demo.entity.User;
 import com.example.demo.entity._Base64Picture;
+import com.example.demo.properties.Properties;
 import com.example.demo.repository.*;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,10 +25,12 @@ public class chartsConfiguration {
   @Autowired
   private UserRepository userRepository;
 
+  @Autowired
+  private Properties properties;
 
   /**
    * 初始化数据库
-   * @return
+   *  返回一个user
    */
   @Bean("user")
   public User getUser(){
@@ -40,6 +44,13 @@ public class chartsConfiguration {
     FaceHandler faceHandler  = new FaceHandler();
     faceHandler.init();
     return faceHandler;
+  }
+
+  @Bean("aiClassify")
+  public AIClassify getAiClassify(){
+    AIClassify aiClassify = new AIClassify();
+    aiClassify.setUrl(properties.getAIURL());
+    return aiClassify;
   }
 
 }

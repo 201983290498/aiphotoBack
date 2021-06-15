@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5f73d9b-3158-4235-a36e-c7ddae7920e0" name="默认变更列表" comment="不会上传的文件">
-      <change afterPath="$PROJECT_DIR$/UpdateLog.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/picTest.java" afterDir="false" />
+    <list default="true" id="a5f73d9b-3158-4235-a36e-c7ddae7920e0" name="默认变更列表" comment="在图片中添加时间属性">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/_Base64Picture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/_Base64Picture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/_Base64PicRepApl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/_Base64PicRepApl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/_Base64PicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/_Base64PicService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/demo/AITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/AITest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/entity/_Base64Picture.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/entity/_Base64Picture.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/_Base64PicRepApl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/_Base64PicRepApl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/demo/AITest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/demo/AITest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -322,7 +313,8 @@
       <workItem from="1623342868827" duration="329000" />
       <workItem from="1623344548981" duration="1391000" />
       <workItem from="1623391281585" duration="692000" />
-      <workItem from="1623587394025" duration="3858000" />
+      <workItem from="1623587394025" duration="4230000" />
+      <workItem from="1623736152016" duration="31000" />
     </task>
     <task id="LOCAL-00001" summary="hh">
       <created>1623344656914</created>
@@ -345,7 +337,21 @@
       <option name="project" value="LOCAL" />
       <updated>1623391361819</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="在图片中添加时间属性">
+      <created>1623597965073</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1623597965073</updated>
+    </task>
+    <task id="LOCAL-00005" summary="在图片中添加时间属性">
+      <created>1623597975627</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1623597975627</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -376,7 +382,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hh" />
     <MESSAGE value="不会上传的文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="不会上传的文件" />
+    <MESSAGE value="在图片中添加时间属性" />
+    <option name="LAST_COMMIT_MESSAGE" value="在图片中添加时间属性" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

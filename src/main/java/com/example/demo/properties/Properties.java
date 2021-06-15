@@ -29,6 +29,8 @@ public class Properties {
   @Value("#{0.85}")
   private double confidence;
 
+  @Value("localhost:8899/imgCfy")
+  private String AIURL;
 
   public Properties() {
   }
