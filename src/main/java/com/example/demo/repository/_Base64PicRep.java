@@ -6,32 +6,33 @@ import java.io.IOException;
 import java.util.List;
 
 public interface _Base64PicRep {
-  public static final String tableName = "picture_list";
+  String tableName = "picture_list";
 
-  public Long findExistById(Long Id);
+  Long findExistById(Long Id);
 
   /**
    * 按id查找图片
-   * @param Id
-   * @return
+   * @param Id 查找图片的ID
    */
-  public _Base64Picture findById(String username,Long Id);
-  public _Base64Picture findById(Long Id);
+  _Base64Picture findById(String username,Long Id);
+  _Base64Picture findById(Long Id);
 
-  public Boolean addInfo(_Base64Picture pictrue) throws IOException;
+  Boolean addInfo(_Base64Picture pictrue) throws IOException;
 
-  public Boolean deleteById(Long Id);
+  Boolean deleteById(Long Id);
 
   /**
    * 查找图片列表
-   * @param owner
-   * @param ispublic
-   * @param categy
-   * @return
+   * @param owner 图片的拥有者
+   * @param ispublic 图片的公私性
+   * @param categy 分类
+   * @return 图片不聚合的图片列表
    */
-  public List<_Base64Picture> findList(String owner, boolean ispublic, String categy);
-
-  public void createTable();
+  List<_Base64Picture> findList(String owner, boolean ispublic, String categy);
+  //新增获取图像分类之后的代码
+  List<_Base64Picture> getClassfifyPics(String owner, boolean ispublic, String categy);
+  void createTable();
 
   Long findId();
+
 }
