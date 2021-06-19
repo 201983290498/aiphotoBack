@@ -2,6 +2,7 @@ package com.example.demo.repository.impl;
 
 import com.example.demo.AI.tool.FaceHandler;
 import com.example.demo.entity.User;
+import com.example.demo.entity.UserEx;
 import com.example.demo.repository.*;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -54,6 +55,17 @@ public class UserRepositoryApl implements UserRepository {
   }
 
   @Override
+  public boolean insertEx(UserEx userEx) {
+    Long exist = jdbcTemplate.queryForObject("select count(*) from tbl_userEx where username=?", Long.class, userEx.getUsername());
+    if (exist != 0)
+      return false;
+    else {
+      jdbcTemplate.update("insert tbl_user(username,pripassword) values(?,?)", userEx.getUsername(),userEx.getPripassword());
+      return true;
+    }
+  }
+
+  @Override
   public boolean find(String name, String password) {
     Long exist = jdbcTemplate.queryForObject("select count(*) from tbl_user where username=? and password=?", Long.class, name, password);
     if(exist==0){
@@ -64,8 +76,20 @@ public class UserRepositoryApl implements UserRepository {
   }
 
   @Override
+  public boolean findEx(String name, String pripassword) {
+    Long exist = jdbcTemplate.queryForObject("select count(*) from tbl_userEx where username=? and pripassword=?", Long.class, name, pripassword);
+    if(exist==0){
+      return false;
+    }else{
+      return true;
+    }
+  }
+
+  @Override
   public void createTable() {
     String sql = new StringBuilder().append("CREATE TABLE IF NOT EXISTS tbl_user(\n").append("`username` varchar(20) PRIMARY KEY,\n").append("`password` VARCHAR(20) NOT NULL,\n").append("`truName` VARCHAR(20) NOT NULL,\n").append("`email` varchar(30) not null,\n").append("faceSet Bigint default 0\n").append(")ENGINE=INNODB DEFAULT CHARSET=utf8;\n").toString();
+    jdbcTemplate.update(sql);
+    sql = new StringBuilder().append("CREATE TABLE IF NOT EXISTS `tbl_userEx` (\n").append("  `username` VARCHAR(20) NOT NULL,\n").append("  `pripassword` VARCHAR(40) NOT NULL,\n").append("  PRIMARY KEY (`username`)\n").append(") ENGINE=INNODB DEFAULT CHARSET=utf8").toString();
     jdbcTemplate.update(sql);
     Init();
   }

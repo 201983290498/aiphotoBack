@@ -1,6 +1,8 @@
 package com.example.demo.entity;
 
 
+import java.util.Map;
+
 //@Data
 //@Component("user")
 public class User {
@@ -20,6 +22,12 @@ public class User {
     this.truName = truName;
     this.email = email;
     this.faceSet = faceSet;
+  }
+  public User(Map<String,Object> data) {
+    this.username = (String) data.get("username");
+    this.password = (String) data.get("password");
+    this.truName = (String) data.get("truName");
+    this.email = (String) data.get("email");
   }
 
   public User(String username, String password, String truName, String email) {
