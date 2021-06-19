@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5f73d9b-3158-4235-a36e-c7ddae7920e0" name="默认变更列表" comment="在图片中添加时间属性">
+    <list default="true" id="a5f73d9b-3158-4235-a36e-c7ddae7920e0" name="默认变更列表" comment="添加了AI功能，只完成了Http请求,接收到数据待处理,图像在加入图库的时候依旧有待处理">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/AI/tool/AIClassify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/AI/tool/AIClassify.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/config/chartsConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/config/chartsConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/config/chartsConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/config/chartsConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/entity/_Base64Picture.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/entity/_Base64Picture.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/properties/Properties.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/properties/Properties.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/_Base64PicRepApl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/_Base64PicRepApl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/service/_Base64PicService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/service/_Base64PicService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,14 +112,16 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.picTest.testInsert">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.DemoApplication (1)">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -315,6 +324,11 @@
       <workItem from="1623391281585" duration="692000" />
       <workItem from="1623587394025" duration="4230000" />
       <workItem from="1623736152016" duration="31000" />
+      <workItem from="1623775737970" duration="1306000" />
+      <workItem from="1623808245703" duration="695000" />
+      <workItem from="1623916878148" duration="28000" />
+      <workItem from="1623999895229" duration="1245000" />
+      <workItem from="1624112090096" duration="955000" />
     </task>
     <task id="LOCAL-00001" summary="hh">
       <created>1623344656914</created>
@@ -351,7 +365,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623597975627</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="添加了AI功能，只完成了Http请求,接收到数据待处理,图像在加入图库的时候依旧有待处理">
+      <created>1623777007550</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1623777007550</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -383,7 +404,8 @@
     <MESSAGE value="hh" />
     <MESSAGE value="不会上传的文件" />
     <MESSAGE value="在图片中添加时间属性" />
-    <option name="LAST_COMMIT_MESSAGE" value="在图片中添加时间属性" />
+    <MESSAGE value="添加了AI功能，只完成了Http请求,接收到数据待处理,图像在加入图库的时候依旧有待处理" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加了AI功能，只完成了Http请求,接收到数据待处理,图像在加入图库的时候依旧有待处理" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

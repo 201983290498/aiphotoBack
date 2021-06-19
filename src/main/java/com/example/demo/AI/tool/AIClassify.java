@@ -30,11 +30,11 @@ public class AIClassify {
     public String classifyPic(String b64){
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
-        String content = "{\"picture\":"+ b64 +"}";
+        String content = "{\"b64\":"+ b64 +"}";
         HttpEntity<String> request = new HttpEntity<>(content,headers);
         ResponseEntity<String> response = restTemplate.postForEntity(url,request,String.class);
         ObjectMapper mapper = new ObjectMapper();
-//        System.out.println(response.getBody());
+        System.out.println(response.getBody());
         return null;
     }
     public String getUrl() {

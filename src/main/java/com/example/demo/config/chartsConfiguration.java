@@ -52,5 +52,4 @@ public class chartsConfiguration {
     aiClassify.setUrl(properties.getAIURL());
     return aiClassify;
   }
-
 }
