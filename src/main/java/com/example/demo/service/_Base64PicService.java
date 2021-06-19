@@ -160,4 +160,8 @@ public class _Base64PicService {
     }
     return pictureList;
   }
+
+  public List<_Base64Picture> getClassifiedPic(String username, String categy) {
+    return pictureRep.getClassfiedfrPics(username,categy);
+  }
 }

@@ -30,7 +30,7 @@ public interface _Base64PicRep {
    */
   List<_Base64Picture> findList(String owner, boolean ispublic, String categy);
   //新增获取图像分类之后的代码
-  List<_Base64Picture> getClassfifyPics(String owner, boolean ispublic, String categy);
+  List<_Base64Picture> getClassfiedfrPics(String owner, String categy);
   void createTable();
 
   Long findId();

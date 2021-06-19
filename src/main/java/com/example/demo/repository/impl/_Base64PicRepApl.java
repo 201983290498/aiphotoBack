@@ -52,8 +52,8 @@ public class _Base64PicRepApl implements _Base64PicRep {
   }
 
   @Override
-  public List<_Base64Picture> getClassfifyPics(String owner, boolean ispublic, String categy) {//兼顾找所有照片中的分类。
-    return jdbcTemplate.query("select * from b64picture_list where owner = ? and ispublic = ? and categy = ? order by time desc", new BeanPropertyRowMapper<_Base64Picture>(_Base64Picture.class), owner, ispublic, "_%"+categy);
+  public List<_Base64Picture> getClassfiedfrPics(String owner, String categy) {//兼顾找所有照片中的分类。
+    return jdbcTemplate.query("select * from b64picture_list where owner = ? and ispublic = false and categy = ? order by time desc", new BeanPropertyRowMapper<_Base64Picture>(_Base64Picture.class), owner, "_%"+categy);
   }
 
   @Override
