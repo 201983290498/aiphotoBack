@@ -2,6 +2,7 @@ package com.example.demo.service;
 
 import com.example.demo.AI.entity.FaceDetect;
 import com.example.demo.AI.entity.tool.facedetect.FaceDetails;
+import com.example.demo.AI.tool.AIClassify;
 import com.example.demo.AI.tool.FaceHandler;
 import com.example.demo.entity.User;
 import com.example.demo.entity._Base64Picture;
@@ -26,16 +27,27 @@ import java.util.List;
 public class _Base64PicService {
   @Autowired
   _Base64PicRep pictureRep;
+
   @Autowired
   MyPictureIOS myPictureIOS;
+
   @Autowired
   UserRepository userRepository;
+
   @Autowired
   FaceHandler faceHandler;
+
   @Autowired
   FaceService faceService;
+
   @Autowired
   PicFaceService picFaceService;
+
+  @Autowired
+  AIClassify aiClassify;
+
+  @Autowired
+  Properties properties;
 
   /**
    * 获取picture的base64编码
@@ -97,14 +109,9 @@ public class _Base64PicService {
    * @param picture : 对图片进行人脸检测
    */
   private void _faceProcess(_Base64Picture picture){
-
+    List<String> categyList = properties.getImgCategy();
     FaceDetect faceDetect = faceHandler.densityDetect(myPictureIOS.B64String2Bytes(picture));// 将图片base64转成byte[] 类型，然后检测人脸
     if(faceDetect != null) {//有人脸
-      //对对共有照片进行分类,
-      if(picture.getIspublic()){
-        picture.setIshuman(true);
-        AIClassifyProcess();//获取分类
-      }
       //获取当前人脸的人脸库，暂时处理为私有的。
       String username = picture.getOwner();
       User user = userRepository.getUser(username);
@@ -115,13 +122,22 @@ public class _Base64PicService {
       }else{
         picture.setIshuman(false);
       }
-    }else if(picture.getIspublic()){
+    }else{
       picture.setIshuman(false);
-      AIClassifyProcess();
     }
+    String categy=categyList.get(0);
+    if(picture.getIshuman()==false){
+      categy = AIClassifyProcess(picture);
+    }
+    if(picture.getIspublic())//共有照片把预分类放到第一个
+      picture.setCategy(categy);
+    else//私有照片，把预测的结果写在后面
+      picture.setCategy(picture.getCategy()+";"+categy);
   }
 
-  void AIClassifyProcess(){}
+  String AIClassifyProcess(_Base64Picture picture){
+    return aiClassify.classifyPic(picture.getB64());
+  }
 
   void _faceDeletePro(Long picId){
     _Base64Picture picture = pictureRep.findById(picId);
