@@ -30,12 +30,12 @@ public class AIClassify {
     public String classifyPic(String b64){
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
-        String content = "{\"b64\":"+ b64 +"}";
+        System.out.println(url);
+        String content = "{\"b64\":"+"\""+ b64 +"\"}";
         HttpEntity<String> request = new HttpEntity<>(content,headers);
         ResponseEntity<String> response = restTemplate.postForEntity(url,request,String.class);
-        ObjectMapper mapper = new ObjectMapper();
-        System.out.println(response.getBody());
-        return null;
+        String requestBody = response.getBody();
+        return ChangeFromMyModelResutl(requestBody);
     }
     public String getUrl() {
         return url;
@@ -43,4 +43,16 @@ public class AIClassify {
     public void setUrl(String url) {
         this.url = url;
     }
+
+    public String ChangeFromMyModelResutl(String result){
+        System.out.println("puthon模型的预测结果为:"+result);
+        if(result.equals("plane")||result.equals("ship")||result.equals("truck")||result.equals("car"))
+            return "交通工具";
+        else if(result.equals("bird")||result.equals("cat")||result.equals("deer")||result.equals("dog")||result.equals("horse")||result.equals("frog"))
+            return "动物";
+        else
+            return "other";
+    }
+
 }
+
