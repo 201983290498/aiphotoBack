@@ -9,6 +9,7 @@ import java.util.Date;
 public class _Base64Picture implements Comparable<_Base64Picture>{
   private Long id;
   private String owner;
+  //多指属性,多个属性;隔开不同的类别，其中最重要的分类放在最前面,公有照片的的预测分类最重要，私有照片的个人分类最重要
   private String categy;
   private String b64;
   private Boolean ispublic;
@@ -57,6 +58,11 @@ public class _Base64Picture implements Comparable<_Base64Picture>{
 
   @Override
   public int compareTo(_Base64Picture o) {
-    return Math.toIntExact(data.getTime() - o.data.getTime());
+    if (data.getTime() - o.data.getTime()==0)
+      return 0;
+    else if(data.getTime() - o.data.getTime()>0)
+      return 1;
+    else
+      return -1;
   }
 }
