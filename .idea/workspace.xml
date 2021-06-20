@@ -4,15 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5f73d9b-3158-4235-a36e-c7ddae7920e0" name="默认变更列表" comment="添加了AI功能，只完成了Http请求,接收到数据待处理,图像在加入图库的时候依旧有待处理">
+    <list default="true" id="a5f73d9b-3158-4235-a36e-c7ddae7920e0" name="默认变更列表" comment="新扩展独立密码的注册，登入和验证功能，完善全局同类图片检索功能">
+      <change afterPath="$PROJECT_DIR$/repository/ecloud-engine-sdk-1.0.0-jar-with-dependencies.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/AI/tool/OnlineAIClassify.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/ecloud_java_sdk_ai_3_0_2_jar_with_dependencies_1_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/AI/tool/AIClassify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/AI/tool/AIClassify.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecloud-java-sdk-ai-3.0.2-jar-with-dependencies(1).jar" beforeDir="false" afterPath="$PROJECT_DIR$/repository/ecloud-java-sdk-ai-3.0.2-jar-with-dependencies(1).jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecloud-java-sdk-core-2.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/repository/ecloud-java-sdk-core-2.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/config/chartsConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/config/chartsConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/config/chartsConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/config/chartsConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/entity/_Base64Picture.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/entity/_Base64Picture.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/properties/Properties.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/properties/Properties.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/_Base64PicRepApl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/_Base64PicRepApl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/service/_Base64PicService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/service/_Base64PicService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/properties/Properties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/properties/Properties.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,9 +85,9 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../myvuedemo03" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/repository/ecloud-java-sdk-core-2.0.0.jar" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.last.edited" value="库" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.45057473" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -100,9 +102,11 @@
       <recent name="C:\Users\coder\Desktop\demo\pictures" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\code\github\respository\aiphoto\demo\repository" />
+      <recent name="E:\code\github\respository\aiphoto\demo\ecloud-java-sdk" />
+      <recent name="E:\code\github\respository\aiphoto\demo" />
       <recent name="C:\Users\coder\Desktop\demo\src\main\resources\static\cjm" />
       <recent name="C:\Users\coder\Desktop\demo\src\main\resources\static\root" />
-      <recent name="C:\Users\coder\Desktop\demo\src\main\resources\static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -112,32 +116,14 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoApplication (1)">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ClassifyTest.test">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AITest.sdkTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.AITest" />
-      <option name="METHOD_NAME" value="sdkTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -153,6 +139,22 @@
       <option name="PACKAGE_NAME" value="com.example.demo" />
       <option name="MAIN_CLASS_NAME" value="com.example.demo.AITest" />
       <option name="METHOD_NAME" value="testCreate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClassifyTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.ClassifyTest" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -221,11 +223,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ClassifyTest.test" />
         <item itemvalue="JUnit.picTest.testInsert" />
         <item itemvalue="JUnit.picTest.testCreate" />
         <item itemvalue="JUnit.AITest.testCreate" />
         <item itemvalue="JUnit.picTest" />
-        <item itemvalue="JUnit.AITest.sdkTest" />
       </list>
     </recent_temporary>
   </component>
@@ -328,7 +330,8 @@
       <workItem from="1623808245703" duration="695000" />
       <workItem from="1623916878148" duration="28000" />
       <workItem from="1623999895229" duration="1245000" />
-      <workItem from="1624112090096" duration="955000" />
+      <workItem from="1624112090096" duration="9934000" />
+      <workItem from="1624159603366" duration="4102000" />
     </task>
     <task id="LOCAL-00001" summary="hh">
       <created>1623344656914</created>
@@ -372,7 +375,70 @@
       <option name="project" value="LOCAL" />
       <updated>1623777007550</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="添加了AI功能，只完成了Http请求,接收到数据待处理,图像在加入图库的时候依旧有待处理">
+      <created>1624113590873</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1624113590873</updated>
+    </task>
+    <task id="LOCAL-00008" summary="完善了和本地cifar10的连接，并尝试成功">
+      <created>1624119293223</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1624119293223</updated>
+    </task>
+    <task id="LOCAL-00009" summary="新增了python服务器的地址和图像的分类">
+      <created>1624119336788</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1624119336788</updated>
+    </task>
+    <task id="LOCAL-00010" summary="将categy扩充为多指属性，重要程度高放在前面">
+      <created>1624119532365</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1624119532365</updated>
+    </task>
+    <task id="LOCAL-00011" summary="修改了categy的匹配方式，适应categy变成多指属性，新增全局同类图像检索功能">
+      <created>1624119598486</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1624119598486</updated>
+    </task>
+    <task id="LOCAL-00012" summary="新增多指属性">
+      <created>1624119621439</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1624119621439</updated>
+    </task>
+    <task id="LOCAL-00013" summary="完善了图像分类的所有功能">
+      <created>1624119660092</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1624119660092</updated>
+    </task>
+    <task id="LOCAL-00014" summary="新增独立密码开启全局图像分类的功能。">
+      <created>1624122305801</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1624122305801</updated>
+    </task>
+    <task id="LOCAL-00015" summary="新扩展独立密码的注册，登入和验证功能，完善全局同类图片检索功能">
+      <created>1624122391277</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1624122391277</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,7 +471,15 @@
     <MESSAGE value="不会上传的文件" />
     <MESSAGE value="在图片中添加时间属性" />
     <MESSAGE value="添加了AI功能，只完成了Http请求,接收到数据待处理,图像在加入图库的时候依旧有待处理" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加了AI功能，只完成了Http请求,接收到数据待处理,图像在加入图库的时候依旧有待处理" />
+    <MESSAGE value="完善了和本地cifar10的连接，并尝试成功" />
+    <MESSAGE value="新增了python服务器的地址和图像的分类" />
+    <MESSAGE value="将categy扩充为多指属性，重要程度高放在前面" />
+    <MESSAGE value="修改了categy的匹配方式，适应categy变成多指属性，新增全局同类图像检索功能" />
+    <MESSAGE value="新增多指属性" />
+    <MESSAGE value="完善了图像分类的所有功能" />
+    <MESSAGE value="新增独立密码开启全局图像分类的功能。" />
+    <MESSAGE value="新扩展独立密码的注册，登入和验证功能，完善全局同类图片检索功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="新扩展独立密码的注册，登入和验证功能，完善全局同类图片检索功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -425,6 +499,14 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/repository/_Base64PicRep.java</url>
+          <line>32</line>
+          <properties class="com.example.demo.repository._Base64PicRep" method="getClassfiedfrPics">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="133" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/PictureRepApl.java</url>

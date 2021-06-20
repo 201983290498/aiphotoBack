@@ -3,6 +3,7 @@ package com.example.demo.config;
 import com.example.demo.AI.entity.FaceSet;
 import com.example.demo.AI.tool.AIClassify;
 import com.example.demo.AI.tool.FaceHandler;
+import com.example.demo.AI.tool.OnlineAIClassify;
 import com.example.demo.entity.ImageClassfication;
 import com.example.demo.entity.Picture;
 import com.example.demo.entity.User;
@@ -52,4 +53,12 @@ public class chartsConfiguration {
     aiClassify.setUrl(properties.getAIURL());
     return aiClassify;
   }
+
+  @Bean("onlineAlClassify")
+  public OnlineAIClassify getOnlineAIClassify(){
+    OnlineAIClassify onlineAIClassify = new OnlineAIClassify();
+    onlineAIClassify.Init(properties.getClassify_AK(),properties.getClassify_SK());
+    return onlineAIClassify;
+  }
+
 }

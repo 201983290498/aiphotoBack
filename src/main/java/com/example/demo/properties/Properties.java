@@ -37,6 +37,15 @@ public class Properties {
   @Value("#{'人物,动物,自然风景,交通工具,建筑,others'.split(',')}")
   private List<String> imgCategy;
 
+  @Value("#{'02e07647f119456f9c4244024a0096c2'}")
+  private String Classify_AK;
+
+  @Value("#{'a0a78d491dbe447d82f4a0a683e23353'}")
+  private String Classify_SK;
+
+  @Value("#{'https://api-wuxi-1.cmecloud.cn:8443/api/imagerecog/china_mobile/engine/image/generalImageDetect'}")
+  private String Classify_url;
+
   public Properties() {
   }
 }
