@@ -4,6 +4,7 @@ import com.example.demo.AI.entity.FaceDetect;
 import com.example.demo.AI.entity.tool.facedetect.FaceDetails;
 import com.example.demo.AI.tool.AIClassify;
 import com.example.demo.AI.tool.FaceHandler;
+import com.example.demo.AI.tool.OnlineAIClassify;
 import com.example.demo.entity.User;
 import com.example.demo.entity._Base64Picture;
 import com.example.demo.properties.Properties;
@@ -45,6 +46,9 @@ public class _Base64PicService {
 
   @Autowired
   AIClassify aiClassify;
+
+  @Autowired
+  OnlineAIClassify onlineAIClassify;
 
   @Autowired
   Properties properties;
@@ -136,7 +140,7 @@ public class _Base64PicService {
   }
 
   String AIClassifyProcess(_Base64Picture picture){
-    return aiClassify.classifyPic(picture.getB64());
+    return onlineAIClassify.classifyPic(picture.getB64());
   }
 
   void _faceDeletePro(Long picId){

@@ -45,7 +45,7 @@ public class _Base64PicController {
     String password = (String) data.get("pripassword");
     if(userService.check_in_Ex(username,password)) {
       String categy = (String) data.get("categy");
-      Boolean ispublic = data.containsKey("ispublic") ? true : false;
+      Boolean ispublic = data.containsKey("ispublic") ? true : (Boolean) data.get("ispublic");
       List<_Base64Picture> pictureList = null;
       log.info(username + "正在获取" + categy + "相关的照片" + ispublic);
       pictureList = service.getClassifiedPic(username, categy);
