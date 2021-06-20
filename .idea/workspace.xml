@@ -4,17 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5f73d9b-3158-4235-a36e-c7ddae7920e0" name="默认变更列表" comment="新扩展独立密码的注册，登入和验证功能，完善全局同类图片检索功能">
-      <change afterPath="$PROJECT_DIR$/repository/ecloud-engine-sdk-1.0.0-jar-with-dependencies.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/AI/tool/OnlineAIClassify.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/ecloud_java_sdk_ai_3_0_2_jar_with_dependencies_1_.xml" beforeDir="false" />
+    <list default="true" id="a5f73d9b-3158-4235-a36e-c7ddae7920e0" name="默认变更列表" comment="完善了通过移动云API修改的任务,待检测">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecloud-java-sdk-ai-3.0.2-jar-with-dependencies(1).jar" beforeDir="false" afterPath="$PROJECT_DIR$/repository/ecloud-java-sdk-ai-3.0.2-jar-with-dependencies(1).jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecloud-java-sdk-core-2.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/repository/ecloud-java-sdk-core-2.0.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/config/chartsConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/config/chartsConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/properties/Properties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/properties/Properties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/config/chartsConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/config/chartsConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controller/_Base64PicController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controller/_Base64PicController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/entity/_Base64Picture.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/entity/_Base64Picture.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/properties/Properties.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/properties/Properties.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/_Base64PicRep.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/_Base64PicRep.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/UserRepositoryApl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/UserRepositoryApl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/_Base64PicRepApl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/_Base64PicRepApl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/service/_Base64PicService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/service/_Base64PicService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +88,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/repository/ecloud-java-sdk-core-2.0.0.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="库" />
     <property name="project.structure.proportion" value="0.15" />
@@ -116,19 +119,8 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ClassifyTest.test">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AITest.testCreate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.DemoApplication (1)">
+    <configuration name="ClassifyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
@@ -137,8 +129,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.AITest" />
-      <option name="METHOD_NAME" value="testCreate" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.ClassifyTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClassifyTest.Online_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.ClassifyTest" />
+      <option name="METHOD_NAME" value="Online_test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -156,21 +163,6 @@
       <option name="MAIN_CLASS_NAME" value="com.example.demo.ClassifyTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="picTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.picTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -223,11 +215,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ClassifyTest.Online_test" />
+        <item itemvalue="JUnit.ClassifyTest" />
         <item itemvalue="JUnit.ClassifyTest.test" />
         <item itemvalue="JUnit.picTest.testInsert" />
         <item itemvalue="JUnit.picTest.testCreate" />
-        <item itemvalue="JUnit.AITest.testCreate" />
-        <item itemvalue="JUnit.picTest" />
       </list>
     </recent_temporary>
   </component>
@@ -331,7 +323,10 @@
       <workItem from="1623916878148" duration="28000" />
       <workItem from="1623999895229" duration="1245000" />
       <workItem from="1624112090096" duration="9934000" />
-      <workItem from="1624159603366" duration="4102000" />
+      <workItem from="1624159603366" duration="4647000" />
+      <workItem from="1624167945614" duration="6243000" />
+      <workItem from="1624188850203" duration="11000" />
+      <workItem from="1624199245165" duration="8000" />
     </task>
     <task id="LOCAL-00001" summary="hh">
       <created>1623344656914</created>
@@ -438,7 +433,21 @@
       <option name="project" value="LOCAL" />
       <updated>1624122391277</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="修改">
+      <created>1624167320078</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1624167320078</updated>
+    </task>
+    <task id="LOCAL-00017" summary="完善了通过移动云API修改的任务,待检测">
+      <created>1624174344594</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1624174344594</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -479,7 +488,9 @@
     <MESSAGE value="完善了图像分类的所有功能" />
     <MESSAGE value="新增独立密码开启全局图像分类的功能。" />
     <MESSAGE value="新扩展独立密码的注册，登入和验证功能，完善全局同类图片检索功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="新扩展独立密码的注册，登入和验证功能，完善全局同类图片检索功能" />
+    <MESSAGE value="修改" />
+    <MESSAGE value="完善了通过移动云API修改的任务,待检测" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善了通过移动云API修改的任务,待检测" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -549,5 +560,11 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="response" />
+        <watch expression="response.getBody()" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
