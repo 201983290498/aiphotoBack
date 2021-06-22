@@ -60,7 +60,7 @@ public class UserRepositoryApl implements UserRepository {
     if (exist != 0)
       return false;
     else {
-      jdbcTemplate.update("insert tbl_user(username,pripassword) values(?,?)", userEx.getUsername(),userEx.getPripassword());
+      jdbcTemplate.update("insert tbl_userEx(username,pripassword) values(?,?)", userEx.getUsername(),userEx.getPripassword());
       return true;
     }
   }

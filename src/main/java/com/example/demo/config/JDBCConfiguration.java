@@ -26,7 +26,7 @@ public class JDBCConfiguration {
   @Bean("datasource")
   public ComboPooledDataSource getDataSource() throws PropertyVetoException {
     ComboPooledDataSource dataSource = new ComboPooledDataSource();
-    dataSource.setDriverClass("com.mysql.jdbc.Driver");
+    dataSource.setDriverClass("com.mysql.cj.jdbc.Driver");
     dataSource.setJdbcUrl(properties.getJbdcUrl());
     dataSource.setUser(properties.getUser());
     dataSource.setPassword(properties.getPassword());

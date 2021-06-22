@@ -31,6 +31,7 @@ public class UserController {
 
   @PostMapping("/register")
   public boolean register(@RequestBody Map<String,Object>data){
+    log.info(data.toString());
     return userService.register(new User(data))&&userService.registerEx(new UserEx(data));
   }
 //  @PostMapping("/register")//添加用户
