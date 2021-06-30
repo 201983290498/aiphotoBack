@@ -4,12 +4,13 @@ import lombok.Data;
 import org.springframework.stereotype.Component;
 
 @Data
-//@Component("imgClassify")
+
 public class ImageClassfication {
   private Long id;
   private String owner;
   private String categy;
   private boolean isPublic;
+  private String remark;
 
   public ImageClassfication(Long id, String owner, String categy) {
     this.id = id;
@@ -26,4 +27,18 @@ public class ImageClassfication {
     this.isPublic = isPublic;
   }
 
+  public ImageClassfication(String owner, String categy, boolean isPublic, String remark) {
+    this.owner = owner;
+    this.categy = categy;
+    this.isPublic = isPublic;
+    this.remark = remark;
+  }
+
+  public ImageClassfication(Long id, String owner, String categy, boolean isPublic, String remark) {
+    this.id = id;
+    this.owner = owner;
+    this.categy = categy;
+    this.isPublic = isPublic;
+    this.remark = remark;
+  }
 }

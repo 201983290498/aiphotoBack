@@ -52,29 +52,33 @@ public class OnlineAIClassify {
                 System.out.println(JacksonUtil.toJson(body));
                 for(String each:list){
                     for(int i=0;i<categy1.length;i++)
-                        if(each.matches("(.*)"+categy1[i]+"(.*)"))
+                        if(each.matches("(.*)"+categy1[i]+"(.*)")) {
                             return categy[0];
+                        }
                     for(int i=0;i<categy2.length;i++)
-                        if(each.matches("(.*)"+categy2[i]+"(.*)"))
+                        if(each.matches("(.*)"+categy2[i]+"(.*)")) {
                             return categy[1];
+                        }
                     for(int i=0;i<categy3.length;i++)
-                        if(each.matches("(.*)"+categy3[i]+"(.*)"))
+                        if(each.matches("(.*)"+categy3[i]+"(.*)")) {
                             return categy[2];
+                        }
                     for(int i=0;i<categy4.length;i++)
-                        if(each.matches("(.*)"+categy4[i]+"(.*)"))
+                        if(each.matches("(.*)"+categy4[i]+"(.*)")) {
                             return categy[3];
+                        }
                     for(int i=0;i<categy5.length;i++)
-                        if(each.matches("(.*)"+categy5[i]+"(.*)"))
+                        if(each.matches("(.*)"+categy5[i]+"(.*)")) {
                             return categy[4];
+                        }
                 }
             }
         } catch (IOException e) {
             e.printStackTrace();
         } catch (IllegalAccessException e) {
             e.printStackTrace();
-        }finally {
-            return ans;
         }
+        return ans;
     }
 
 

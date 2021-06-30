@@ -22,8 +22,11 @@ public interface ImageClassficationRep {
    * @return
    */
   public boolean deleteInfo(String owner,String categy);
+
   public boolean addInfo(String owner,String categy);
-  public boolean addInfo(String owner,String categy,boolean ispublic);
+  public boolean addInfo(String owner,String categy,String remark);
+  public boolean addInfo(String owner,String categy,boolean ispublic,String remark);
+
 
   /**
    * 初次运行自动生成表格

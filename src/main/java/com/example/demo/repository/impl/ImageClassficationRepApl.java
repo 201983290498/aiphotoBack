@@ -46,6 +46,17 @@ public class ImageClassficationRepApl implements ImageClassficationRep {
       return false;
   }
 
+  @Override
+  public boolean addInfo(String owner, String categy) {
+    Long exist = jdbcTemplate.queryForObject("select count(*) from imageclassify where owner=? and categy=?",Long.class,owner, categy);
+    if(exist!=0)
+      return false;
+    else{
+        jdbcTemplate.update("insert imageclassify(owner,categy) value(?,?)",owner, categy);
+      return true;
+    }
+  }
+
   /**
    * 添加新的分类
    * @param owner 拥有者
@@ -53,34 +64,41 @@ public class ImageClassficationRepApl implements ImageClassficationRep {
    * @return 是否添加成功，无法重复添加
    */
   @Override
-  public boolean addInfo(String owner, String categy) {
+  public boolean addInfo(String owner, String categy,String remark) {
     Long exist = jdbcTemplate.queryForObject("select count(*) from imageclassify where owner=? and categy=?",Long.class,owner, categy);
     if(exist!=0)
       return false;
     else{
-      jdbcTemplate.update("insert imageclassify(owner,categy) value(?,?)",owner, categy);
+      if(remark!=null)
+        jdbcTemplate.update("insert imageclassify(owner,categy) value(?,?)",owner, categy);
+      else
+        jdbcTemplate.update("insert imageclassify(owner,categy,remark) value(?,?,?)",owner, categy,remark);
       return true;
     }
   }
 
   @Override
-  public boolean addInfo(String owner, String categy, boolean ispublic) {
-    if(ispublic==true) {
+  public boolean addInfo(String owner, String categy, boolean ispublic,String remark) {
+    if(ispublic) {
       Long exist = jdbcTemplate.queryForObject("select count(*) from imageclassify where owner=? and categy=?", Long.class, owner, categy);
       if (exist != 0)
         return false;
       else {
-        jdbcTemplate.update("insert imageclassify(owner,categy,ispublic) value(?,?,?)", owner, categy,ispublic);
+        if(remark!=null)
+          jdbcTemplate.update("insert imageclassify(owner,categy,ispublic) value(?,?,?)", owner, categy,ispublic);
+        else{
+          jdbcTemplate.update("insert imageclassify(owner,categy,ispublic,remark) value(?,?,?,?)", owner, categy,ispublic,remark);
+        }
         return true;
       }
     }else{
-      return addInfo(owner,categy);
+      return addInfo(owner,categy,remark);
     }
   }
 
   @Override
   public void createTable() {
-    String sql = new StringBuilder().append("CREATE TABLE IF NOT EXISTS imageClassify(\n").append("`id` INT AUTO_INCREMENT PRIMARY KEY,\n").append("`owner` VARCHAR(20) NOT NULL,\n").append("`categy` VARCHAR(20) NOT NULL DEFAULT 'others',\n").append("`ispublic` bool not null default true").append(")ENGINE=INNODB DEFAULT CHARSET=utf8;\n").toString();
+    String sql = new StringBuilder().append("CREATE TABLE IF NOT EXISTS imageClassify(\n").append("`id` INT AUTO_INCREMENT PRIMARY KEY,\n").append("`owner` VARCHAR(20) NOT NULL,\n").append("`categy` VARCHAR(20) NOT NULL DEFAULT 'others',\n").append("`ispublic` bool not null default false,\n").append("`remark`  varchar(300) default ''\n").append(")ENGINE=INNODB DEFAULT CHARSET=utf8;\n").toString();
     jdbcTemplate.update(sql);
 //    System.out.println("create imageClassify========");
     initTable();

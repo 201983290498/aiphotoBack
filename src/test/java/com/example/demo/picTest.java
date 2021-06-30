@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.io.IOException;
+import java.util.List;
 
 @SpringBootTest
 public class picTest {
@@ -28,5 +29,12 @@ public class picTest {
             e.printStackTrace();
         }
     }
-
+    @Test
+    void find(){
+        String username = "cjmcjm";
+        String categy = "others";
+        Boolean ispublic = true;
+        List<_Base64Picture> list = base64PicRep.findList(username, ispublic, categy);
+        System.out.println(list.size());
+    }
 }

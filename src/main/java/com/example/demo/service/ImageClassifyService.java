@@ -29,9 +29,9 @@ public class ImageClassifyService {
    * @param categy
    * @return
    */
-  public boolean addCategy(String userName,String categy){
+  public boolean addCategy(String userName,String categy,String remark){
     if(!userName.equals("admin"))
-      return imageClassficationRep.addInfo(userName,categy);
+      return imageClassficationRep.addInfo(userName,categy,remark);
     else return false;
   }
 

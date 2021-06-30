@@ -3,10 +3,10 @@ package com.example.demo.controller;
 import com.example.demo.service.ImageClassifyService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
 import java.util.List;
+import java.util.Map;
 
 @Slf4j
 @RestController
@@ -27,10 +27,13 @@ class ImageClassifyController {
     return service.deleteCategy(username,categy);
   }
 
-  @GetMapping("/categy/create")
-  public Boolean createCategy(String username,String categy){
+  @PostMapping("/categy/create")
+  public Boolean createCategy(@RequestBody Map<String, Object> data){
+    String username = (String) data.get("username");
+    String categy = (String) data.get("categy");
+    String remark = (String) data.get("remark");
     log.info(username+"正在添加"+categy);
-    return service.addCategy(username,categy);
+    return service.addCategy(username,categy,remark);
   }
 
 }
