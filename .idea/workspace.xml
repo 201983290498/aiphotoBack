@@ -4,20 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5f73d9b-3158-4235-a36e-c7ddae7920e0" name="默认变更列表" comment="完善了通过移动云API修改的任务,待检测">
+    <list default="true" id="a5f73d9b-3158-4235-a36e-c7ddae7920e0" name="默认变更列表" comment="给分类增添备注功能">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/config/chartsConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/config/chartsConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controller/_Base64PicController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controller/_Base64PicController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/entity/_Base64Picture.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/entity/_Base64Picture.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/properties/Properties.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/properties/Properties.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/_Base64PicRep.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/_Base64PicRep.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/UserRepositoryApl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/UserRepositoryApl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/_Base64PicRepApl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/_Base64PicRepApl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/service/_Base64PicService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/service/_Base64PicService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecloud-java-sdk/ecloud-java-sdk-core-info.log" beforeDir="false" afterPath="$PROJECT_DIR$/ecloud-java-sdk/ecloud-java-sdk-core-info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/ImageClassifyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/ImageClassifyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/ImageClassficationRepApl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/ImageClassficationRepApl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controller/ImageClassifyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controller/ImageClassifyController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/entity/ImageClassfication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/entity/ImageClassfication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/ImageClassficationRep.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/ImageClassficationRep.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/ImageClassficationRepApl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/ImageClassficationRepApl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/service/ImageClassifyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/service/ImageClassifyService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +73,7 @@
     <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -167,7 +164,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="picTest.testCreate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserEx.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
@@ -176,14 +173,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.picTest" />
-      <option name="METHOD_NAME" value="testCreate" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.UserEx" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="picTest.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="picTest.find" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
@@ -193,7 +190,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.example.demo" />
       <option name="MAIN_CLASS_NAME" value="com.example.demo.picTest" />
-      <option name="METHOD_NAME" value="testInsert" />
+      <option name="METHOD_NAME" value="find" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -215,11 +212,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.picTest.find" />
+        <item itemvalue="JUnit.UserEx.test" />
         <item itemvalue="JUnit.ClassifyTest.Online_test" />
         <item itemvalue="JUnit.ClassifyTest" />
         <item itemvalue="JUnit.ClassifyTest.test" />
-        <item itemvalue="JUnit.picTest.testInsert" />
-        <item itemvalue="JUnit.picTest.testCreate" />
       </list>
     </recent_temporary>
   </component>
@@ -327,6 +324,19 @@
       <workItem from="1624167945614" duration="6243000" />
       <workItem from="1624188850203" duration="11000" />
       <workItem from="1624199245165" duration="8000" />
+      <workItem from="1624199319628" duration="771000" />
+      <workItem from="1624380024909" duration="761000" />
+      <workItem from="1624380998542" duration="193000" />
+      <workItem from="1624576902172" duration="3113000" />
+      <workItem from="1624589146611" duration="846000" />
+      <workItem from="1624590700939" duration="5249000" />
+      <workItem from="1624772361080" duration="7531000" />
+      <workItem from="1624893904629" duration="1334000" />
+      <workItem from="1624947568789" duration="1197000" />
+      <workItem from="1625040996660" duration="9002000" />
+      <workItem from="1625103811333" duration="1242000" />
+      <workItem from="1625151788624" duration="1162000" />
+      <workItem from="1625217623265" duration="3572000" />
     </task>
     <task id="LOCAL-00001" summary="hh">
       <created>1623344656914</created>
@@ -447,7 +457,49 @@
       <option name="project" value="LOCAL" />
       <updated>1624174344594</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="完善了通过移动云API修改的任务,待检测">
+      <created>1624199348106</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1624199348106</updated>
+    </task>
+    <task id="LOCAL-00019" summary="完善了通过移动云API修改的任务,待检测">
+      <created>1624199358234</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1624199358234</updated>
+    </task>
+    <task id="LOCAL-00020" summary="注册功能解决">
+      <created>1624381148990</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1624381148990</updated>
+    </task>
+    <task id="LOCAL-00021" summary="注册功能解决">
+      <created>1624381158948</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1624381158948</updated>
+    </task>
+    <task id="LOCAL-00022" summary="注册功能解决">
+      <created>1624381165053</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1624381165053</updated>
+    </task>
+    <task id="LOCAL-00023" summary="给分类增添备注功能">
+      <created>1625059035503</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1625059035503</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -490,7 +542,9 @@
     <MESSAGE value="新扩展独立密码的注册，登入和验证功能，完善全局同类图片检索功能" />
     <MESSAGE value="修改" />
     <MESSAGE value="完善了通过移动云API修改的任务,待检测" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善了通过移动云API修改的任务,待检测" />
+    <MESSAGE value="注册功能解决" />
+    <MESSAGE value="给分类增添备注功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="给分类增添备注功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -531,7 +585,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/entity/ImageClassfication.java</url>
-          <line>14</line>
+          <line>15</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -554,12 +608,67 @@
           <line>118</line>
           <option name="timeStamp" value="127" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/service/UserService.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="135" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/UserRepositoryApl.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="136" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/demo/picTest.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="139" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/controller/_Base64PicController.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="140" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/_Base64PicRepApl.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="142" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/service/_Base64PicService.java</url>
+          <line>106</line>
+          <option name="timeStamp" value="143" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/controller/_Base64PicController.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="144" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/service/_Base64PicService.java</url>
+          <line>141</line>
+          <option name="timeStamp" value="145" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/AI/tool/OnlineAIClassify.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="147" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/controller/UserController.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="150" />
+        </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="123" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.example.demo.repository.impl._Base64PicRepApl" memberName="jdbcTemplate" />
+      </pinned-members>
+    </pin-to-top-manager>
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="response" />
