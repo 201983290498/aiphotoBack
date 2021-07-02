@@ -28,7 +28,7 @@ public class _Base64PicController {
   }
 
   @GetMapping("/b64pictures")
-  public List<_Base64Picture> getCategyUrl(@RequestParam("username")String username, @RequestParam("categy") String categy, @RequestParam(name="ispublic", defaultValue = "false") String ispublic){
+  public List<Long> getCategyUrl(@RequestParam("username")String username, @RequestParam("categy") String categy, @RequestParam(name="ispublic", defaultValue = "false") String ispublic){
     List<_Base64Picture> pictureList = null;
     log.info(username+"正在获取"+categy+"相关的照片"+ispublic);
     if(ispublic.equals("false")){
@@ -36,10 +36,30 @@ public class _Base64PicController {
     }else{
       pictureList = service.getPublicPictureByCategy(username,categy);
     }
-    return pictureList;
+    List<Long> numberlist = new LinkedList<>();
+    for(_Base64Picture each:pictureList){
+      numberlist.add(each.getId());
+    }
+    return numberlist;
   }
+//  @PostMapping("/b64pictures/classified")
+//  public List<_Base64Picture> getClassifiedPicFromPri(@RequestBody Map<String,Object> data){
+//    String username = (String) data.get("username");
+//    //待添加独立密码
+//    String password = (String) data.get("pripassword");
+//    if(userService.check_in_Ex(username,password)) {
+//      String categy = (String) data.get("categy");
+//      Boolean ispublic = data.containsKey("ispublic") ? true : (Boolean) data.get("ispublic");
+//      List<_Base64Picture> pictureList = null;
+//      log.info(username + "正在获取" + categy + "相关的照片" + ispublic);
+//      pictureList = service.getClassifiedPic(username, categy);
+//      return pictureList;
+//    }else{
+//      return null;
+//    }
+//  }
   @PostMapping("/b64pictures/classified")
-  public List<_Base64Picture> getClassifiedPicFromPri(@RequestBody Map<String,Object> data){
+  public List<Long> getClassifiedPicFromPri(@RequestBody Map<String,Object> data){
     String username = (String) data.get("username");
     //待添加独立密码
     String password = (String) data.get("pripassword");
@@ -49,7 +69,11 @@ public class _Base64PicController {
       List<_Base64Picture> pictureList = null;
       log.info(username + "正在获取" + categy + "相关的照片" + ispublic);
       pictureList = service.getClassifiedPic(username, categy);
-      return pictureList;
+      List<Long> numberlist = new LinkedList<>();
+      for(_Base64Picture each:pictureList){
+        numberlist.add(each.getId());
+      }
+      return numberlist;
     }else{
       return null;
     }
