@@ -69,7 +69,7 @@ public class ImageClassficationRepApl implements ImageClassficationRep {
     if(exist!=0)
       return false;
     else{
-      if(remark!=null)
+      if(remark.equals(""))
         jdbcTemplate.update("insert imageclassify(owner,categy) value(?,?)",owner, categy);
       else
         jdbcTemplate.update("insert imageclassify(owner,categy,remark) value(?,?,?)",owner, categy,remark);
@@ -84,7 +84,7 @@ public class ImageClassficationRepApl implements ImageClassficationRep {
       if (exist != 0)
         return false;
       else {
-        if(remark!=null)
+        if(remark.equals(""))
           jdbcTemplate.update("insert imageclassify(owner,categy,ispublic) value(?,?,?)", owner, categy,ispublic);
         else{
           jdbcTemplate.update("insert imageclassify(owner,categy,ispublic,remark) value(?,?,?,?)", owner, categy,ispublic,remark);

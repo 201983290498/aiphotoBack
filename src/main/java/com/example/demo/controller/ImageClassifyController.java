@@ -33,7 +33,8 @@ class ImageClassifyController {
     String categy = (String) data.get("categy");
     String remark = (String) data.get("remark");
     log.info(username+"正在添加"+categy);
+    if(categy.equals(""))
+      return false;
     return service.addCategy(username,categy,remark);
   }
-
 }
