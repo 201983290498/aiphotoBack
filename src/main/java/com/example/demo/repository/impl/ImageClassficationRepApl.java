@@ -112,7 +112,7 @@ public class ImageClassficationRepApl implements ImageClassficationRep {
     list.add("动物");list.add("others");
 //    System.out.println(list);
     for (int i = 0; i < list.size(); i++) {
-      addInfo("admin", list.get(i));
+      addInfo("admin", list.get(i),true,null);
     }
   }
 

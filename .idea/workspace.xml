@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5f73d9b-3158-4235-a36e-c7ddae7920e0" name="默认变更列表" comment="修改配置文件的读写方式给图片添加了论文栏">
+    <list default="true" id="a5f73d9b-3158-4235-a36e-c7ddae7920e0" name="默认变更列表" comment="增加了收藏图片的功能">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/demo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecloud-java-sdk/ecloud-java-sdk-core-info.log" beforeDir="false" afterPath="$PROJECT_DIR$/ecloud-java-sdk/ecloud-java-sdk-core-info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/_Base64PicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/_Base64PicController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controller/_Base64PicController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controller/_Base64PicController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/entity/_Base64Picture.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/entity/_Base64Picture.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/_Base64PicRep.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/_Base64PicRep.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/_Base64PicRepApl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/_Base64PicRepApl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/service/_Base64PicService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/service/_Base64PicService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +61,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
   <component name="ProjectId" id="1rfHuvgxMOpxjAdk2ETsEJgMi9O" />
   <component name="ProjectLevelVcsManager">
     <OptionsSetting value="false" id="Update" />
@@ -86,7 +93,7 @@
     <property name="project.structure.last.edited" value="库" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.45057473" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="ReaderModeSettings">
@@ -201,10 +208,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ClassifyTest" />
         <item itemvalue="JUnit.picTest.find" />
         <item itemvalue="JUnit.UserEx.test" />
         <item itemvalue="JUnit.ClassifyTest.Online_test" />
-        <item itemvalue="JUnit.ClassifyTest" />
         <item itemvalue="JUnit.ClassifyTest.test" />
       </list>
     </recent_temporary>
@@ -328,7 +335,10 @@
       <workItem from="1625217623265" duration="11881000" />
       <workItem from="1625280928737" duration="9456000" />
       <workItem from="1625307550020" duration="1286000" />
-      <workItem from="1625314920776" duration="927000" />
+      <workItem from="1625314920776" duration="1717000" />
+      <workItem from="1625319341635" duration="1262000" />
+      <workItem from="1625322632757" duration="4752000" />
+      <workItem from="1625331393085" duration="285000" />
     </task>
     <task id="LOCAL-00001" summary="hh">
       <created>1623344656914</created>
@@ -540,7 +550,28 @@
       <option name="project" value="LOCAL" />
       <updated>1625283218606</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="...">
+      <created>1625316283376</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1625316283376</updated>
+    </task>
+    <task id="LOCAL-00032" summary="增加了收藏图片的功能">
+      <created>1625323585291</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1625323585291</updated>
+    </task>
+    <task id="LOCAL-00033" summary="增加了收藏图片的功能">
+      <created>1625323612447</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1625323612447</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -588,7 +619,9 @@
     <MESSAGE value="修改添加分类" />
     <MESSAGE value="解决图片集体加载缓慢问题" />
     <MESSAGE value="修改配置文件的读写方式给图片添加了论文栏" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改配置文件的读写方式给图片添加了论文栏" />
+    <MESSAGE value="..." />
+    <MESSAGE value="增加了收藏图片的功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加了收藏图片的功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
