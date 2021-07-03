@@ -168,4 +168,12 @@ public class _Base64PicService {
   public List<_Base64Picture> getClassifiedPic(String username, String categy) {
     return pictureRep.getClassfiedfrPics(username,categy);
   }
+
+  public boolean addCollected(Long id) {
+    return pictureRep.addCollected(id);
+  }
+
+  public Boolean quitCollected(Long id) {
+    return pictureRep.quitCollected(id);
+  }
 }

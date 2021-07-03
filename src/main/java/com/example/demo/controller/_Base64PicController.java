@@ -92,4 +92,14 @@ public class _Base64PicController {
     log.info("需要删除的图片列表便编号"+list);
     return service.deletePic(list);
   }
+
+  @GetMapping("/b64picture/setCollected")
+  public Boolean setLiked(@RequestParam("id") Long id){
+    return service.addCollected(id);
+  }
+
+  @GetMapping("/b64picture/quitCollected")
+  public Boolean delLiked(@RequestParam("id") Long id){
+    return service.quitCollected(id);
+  }
 }

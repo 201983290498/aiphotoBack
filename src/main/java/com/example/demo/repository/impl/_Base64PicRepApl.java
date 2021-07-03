@@ -59,7 +59,7 @@ public class _Base64PicRepApl implements _Base64PicRep {
   @Override
   public void createTable() {
     //存储超长的文本
-    String sql = new StringBuilder().append("CREATE TABLE IF NOT EXISTS b64picture_list(\n").append("`id` BIGINT NOT NULL PRIMARY KEY,\n").append("`owner` VARCHAR(20) NOT NULL,\n").append("`categy` VARCHAR(20) NOT NULL,\n").append("`b64` MEDIUMTEXT NOT NULL,\n").append("`ispublic` BOOL DEFAULT TRUE,\n").append("`picname` VARCHAR(40) NOT NULL,\n").append("`persontag` VARCHAR(20) DEFAULT NULL,\n").append("`ishuman` BOOLEAN DEFAULT FALSE,\n").append("`time` date not null,\n").append("`remark` varchar(300) default null").append(")ENGINE=INNODB DEFAULT CHARSET=utf8;\n").toString();
+    String sql = new StringBuilder().append("CREATE TABLE IF NOT EXISTS b64picture_list(\n").append("`id` BIGINT NOT NULL PRIMARY KEY,\n").append("`owner` VARCHAR(20) NOT NULL,\n").append("`categy` VARCHAR(20) NOT NULL,\n").append("`b64` MEDIUMTEXT NOT NULL,\n").append("`ispublic` BOOL DEFAULT TRUE,\n").append("`picname` VARCHAR(40) NOT NULL,\n").append("`persontag` VARCHAR(20) DEFAULT NULL,\n").append("`ishuman` BOOLEAN DEFAULT FALSE,\n").append("`time` date not null,\n").append("`remark` varchar(300) default null,\n").append("`collected` boolean default false\n").append(")ENGINE=INNODB DEFAULT CHARSET=utf8;\n").toString();
     jdbcTemplate.update(sql);
   }
 
@@ -70,5 +70,25 @@ public class _Base64PicRepApl implements _Base64PicRep {
       return 1L;
     else
       return exist+1L;
+  }
+
+  @Override
+  public Boolean quitCollected(Long id) {
+    if(findExistById(id)!=0L){
+      jdbcTemplate.update("update b64picture_list set collected=false where id = ?",id);
+      return true;
+    }else{
+      return false;
+    }
+  }
+
+  @Override
+  public boolean addCollected(Long id) {
+    if(findExistById(id)!=0L){
+      jdbcTemplate.update("update b64picture_list set collected=true where id = ?",id);
+      return true;
+    }else{
+      return false;
+    }
   }
 }
