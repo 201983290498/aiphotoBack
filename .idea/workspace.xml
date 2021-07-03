@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5f73d9b-3158-4235-a36e-c7ddae7920e0" name="默认变更列表" comment="给分类增添备注功能">
+    <list default="true" id="a5f73d9b-3158-4235-a36e-c7ddae7920e0" name="默认变更列表" comment="解决图片集体加载缓慢问题">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecloud-java-sdk/ecloud-java-sdk-core-info.log" beforeDir="false" afterPath="$PROJECT_DIR$/ecloud-java-sdk/ecloud-java-sdk-core-info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/ImageClassifyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/ImageClassifyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/ImageClassficationRepApl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/ImageClassficationRepApl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controller/ImageClassifyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controller/ImageClassifyController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/entity/ImageClassfication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/entity/ImageClassfication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/ImageClassficationRep.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/ImageClassficationRep.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/ImageClassficationRepApl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/ImageClassficationRepApl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/service/ImageClassifyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/service/ImageClassifyService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/FaceRecognitionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/FaceRecognitionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/_Base64Picture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/_Base64Picture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/properties/Properties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/properties/Properties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/_Base64PicRepApl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/_Base64PicRepApl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,9 +47,9 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/main/java/com/example/demo/service/_Base64PicService.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/com/example/demo/service/FaceService.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/example/demo/controller/_Base64PicController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/example/demo/service/FaceService.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/example/demo/service/_Base64PicService.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -336,7 +334,8 @@
       <workItem from="1625040996660" duration="9002000" />
       <workItem from="1625103811333" duration="1242000" />
       <workItem from="1625151788624" duration="1162000" />
-      <workItem from="1625217623265" duration="3572000" />
+      <workItem from="1625217623265" duration="11881000" />
+      <workItem from="1625280928737" duration="1996000" />
     </task>
     <task id="LOCAL-00001" summary="hh">
       <created>1623344656914</created>
@@ -499,7 +498,35 @@
       <option name="project" value="LOCAL" />
       <updated>1625059035503</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="修改添加分类">
+      <created>1625229770079</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1625229770079</updated>
+    </task>
+    <task id="LOCAL-00025" summary="修改添加分类">
+      <created>1625229776311</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1625229776311</updated>
+    </task>
+    <task id="LOCAL-00026" summary="修改添加分类">
+      <created>1625229788793</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1625229788793</updated>
+    </task>
+    <task id="LOCAL-00027" summary="解决图片集体加载缓慢问题">
+      <created>1625237755536</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1625237755537</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -544,7 +571,9 @@
     <MESSAGE value="完善了通过移动云API修改的任务,待检测" />
     <MESSAGE value="注册功能解决" />
     <MESSAGE value="给分类增添备注功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="给分类增添备注功能" />
+    <MESSAGE value="修改添加分类" />
+    <MESSAGE value="解决图片集体加载缓慢问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="解决图片集体加载缓慢问题" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -589,11 +618,6 @@
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/tool/MyJDBCTemplate.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="94" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/example/demo/ToolTest.java</url>
           <line>26</line>
           <option name="timeStamp" value="100" />
@@ -624,11 +648,6 @@
           <option name="timeStamp" value="139" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/controller/_Base64PicController.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="140" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/_Base64PicRepApl.java</url>
           <line>38</line>
           <option name="timeStamp" value="142" />
@@ -637,11 +656,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/service/_Base64PicService.java</url>
           <line>106</line>
           <option name="timeStamp" value="143" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/controller/_Base64PicController.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="144" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/service/_Base64PicService.java</url>

@@ -18,6 +18,7 @@ public class _Base64Picture implements Comparable<_Base64Picture>{
   private String persontag;
   private Boolean ishuman;
   private Date data;
+  private String remark;
 
   public _Base64Picture(Long id, String owner, String categy, String b64, Boolean ispublic, String picname, String persontag, Boolean ishuman) {
     this.id = id;
@@ -64,5 +65,18 @@ public class _Base64Picture implements Comparable<_Base64Picture>{
       return 1;
     else
       return -1;
+  }
+
+  public _Base64Picture(Long id, String owner, String categy, String b64, Boolean ispublic, String picname, String persontag, Boolean ishuman, Date data, String remark) {
+    this.id = id;
+    this.owner = owner;
+    this.categy = categy;
+    this.b64 = b64;
+    this.ispublic = ispublic;
+    this.picname = picname;
+    this.persontag = persontag;
+    this.ishuman = ishuman;
+    this.data = data;
+    this.remark = remark;
   }
 }

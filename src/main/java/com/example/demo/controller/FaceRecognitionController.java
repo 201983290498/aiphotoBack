@@ -22,7 +22,7 @@ public class FaceRecognitionController {
   _Base64PicService base64PicService;
 
   @GetMapping("/face/collections")
-  public List<_Base64Picture> getSimilarFace(@RequestParam("id") Long picId,@RequestParam(name="confidence", defaultValue = "0.85",required = false)double confidence ){
+  public List<Long> getSimilarFace(@RequestParam("id") Long picId,@RequestParam(name="confidence", defaultValue = "0.85",required = false)double confidence ){
 
     List<_Base64Picture> picList = null;
     List<Long> faceIdlist = new LinkedList<>();
@@ -36,7 +36,6 @@ public class FaceRecognitionController {
     for(String face:faceList)
       faceIdlist.add(Long.valueOf(face));
     List<Long> pictureIds = picFaceService.findSimilar(faceIdlist,pic.getIspublic(),confidence);
-    picList = base64PicService.findPictrueByList(pictureIds);
-    return picList;
+    return pictureIds;
   }
 }
