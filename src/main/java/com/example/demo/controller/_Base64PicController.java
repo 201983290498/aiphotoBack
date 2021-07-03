@@ -82,7 +82,8 @@ public class _Base64PicController {
   @GetMapping("/b64picture")
   public _Base64Picture getPicture(@RequestParam("username")String username,@RequestParam("id")Long Id ){
     log.info(username+Id);
-    return service.findPictrueById(username,Id);
+    _Base64Picture pictrueById = service.findPictrueById(username, Id);
+    return pictrueById;
   }
 
   //修改，需要添加一个参数，人名

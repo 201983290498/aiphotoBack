@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5f73d9b-3158-4235-a36e-c7ddae7920e0" name="默认变更列表" comment="解决图片集体加载缓慢问题">
+    <list default="true" id="a5f73d9b-3158-4235-a36e-c7ddae7920e0" name="默认变更列表" comment="修改配置文件的读写方式给图片添加了论文栏">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecloud-java-sdk/ecloud-java-sdk-core-info.log" beforeDir="false" afterPath="$PROJECT_DIR$/ecloud-java-sdk/ecloud-java-sdk-core-info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/FaceRecognitionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/FaceRecognitionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/_Base64Picture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/_Base64Picture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/properties/Properties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/properties/Properties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/_Base64PicRepApl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/_Base64PicRepApl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/_Base64PicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/_Base64PicController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controller/_Base64PicController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controller/_Base64PicController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,13 +199,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="demo" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.AIPhotoApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.picTest.find" />
@@ -335,7 +326,9 @@
       <workItem from="1625103811333" duration="1242000" />
       <workItem from="1625151788624" duration="1162000" />
       <workItem from="1625217623265" duration="11881000" />
-      <workItem from="1625280928737" duration="1996000" />
+      <workItem from="1625280928737" duration="9456000" />
+      <workItem from="1625307550020" duration="1286000" />
+      <workItem from="1625314920776" duration="927000" />
     </task>
     <task id="LOCAL-00001" summary="hh">
       <created>1623344656914</created>
@@ -526,7 +519,28 @@
       <option name="project" value="LOCAL" />
       <updated>1625237755537</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="修改配置文件的读写方式给图片添加了论文栏">
+      <created>1625283207183</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1625283207183</updated>
+    </task>
+    <task id="LOCAL-00029" summary="修改配置文件的读写方式给图片添加了论文栏">
+      <created>1625283213282</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1625283213283</updated>
+    </task>
+    <task id="LOCAL-00030" summary="修改配置文件的读写方式给图片添加了论文栏">
+      <created>1625283218606</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1625283218606</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -573,7 +587,8 @@
     <MESSAGE value="给分类增添备注功能" />
     <MESSAGE value="修改添加分类" />
     <MESSAGE value="解决图片集体加载缓慢问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="解决图片集体加载缓慢问题" />
+    <MESSAGE value="修改配置文件的读写方式给图片添加了论文栏" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改配置文件的读写方式给图片添加了论文栏" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -671,6 +686,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/controller/UserController.java</url>
           <line>34</line>
           <option name="timeStamp" value="150" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/controller/_Base64PicController.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="152" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />
