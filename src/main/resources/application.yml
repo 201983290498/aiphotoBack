@@ -2,7 +2,7 @@ server:
   port: 9999
 
 database:
-  url: jdbc:mysql://localhost:3306/aiphoto
+  url: jdbc:mysql://localhost:3306/aiphoto?useUnicode=true&characterEncoding=utf8&useSSL=false
   username: root
   password: 123456
 
