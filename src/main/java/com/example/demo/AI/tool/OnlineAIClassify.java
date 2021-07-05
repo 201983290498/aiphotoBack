@@ -47,9 +47,7 @@ public class OnlineAIClassify {
             EngineImageClassifyDetectResponse response = eCloudClient.call(request);
             if("OK".equals(response.getState())){
                 List<EngineClassify> body = response.getBody();
-                System.out.println();
                 List<String> list= Arrays.asList(body.get(0).getClasses().split(","));
-                System.out.println(JacksonUtil.toJson(body));
                 for(String each:list){
                     for(int i=0;i<categy1.length;i++)
                         if(each.matches("(.*)"+categy1[i]+"(.*)")) {
