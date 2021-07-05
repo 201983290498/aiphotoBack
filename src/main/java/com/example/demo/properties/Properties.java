@@ -37,7 +37,7 @@ public class Properties {
   @Value("#{'人物,动物,自然风景,交通工具,建筑,others'.split(',')}")
   private List<String> imgCategy;
 
-  @Value("${AIFace.AK")
+  @Value("${AIFace.AK}")
   private String Classify_AK;
 
   @Value("${AIFace.SK}")
