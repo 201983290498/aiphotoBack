@@ -98,7 +98,7 @@ public class _Base64PicService {
 
   private List<_Base64Picture> _getPictureList(String username, String categy, Boolean ispublic){
     List<_Base64Picture> base64PictureList = pictureRep.findList(username,ispublic,categy);
-//    Collections.sort(base64PictureList);
+    Collections.sort(base64PictureList);
     return base64PictureList;
   }
   private Boolean _addPicture(_Base64Picture picture) throws  IOException{
