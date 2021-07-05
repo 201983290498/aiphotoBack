@@ -75,7 +75,7 @@ public class _Base64PicRepApl implements _Base64PicRep {
   @Override
   public Boolean quitCollected(Long id) {
     if(findExistById(id)!=0L){
-      jdbcTemplate.update("update b64picture_list set collected=false where id = ?",id);
+      jdbcTemplate.update("update b64picture_list set collected=0 where id = ?",id);
       return true;
     }else{
       return false;
@@ -83,9 +83,9 @@ public class _Base64PicRepApl implements _Base64PicRep {
   }
 
   @Override
-  public boolean addCollected(Long id) {
+  public boolean addCollected(Long id,int rank) {
     if(findExistById(id)!=0L){
-      jdbcTemplate.update("update b64picture_list set collected=true where id = ?",id);
+      jdbcTemplate.update("update b64picture_list set collected=? where id = ?",rank,id);
       return true;
     }else{
       return false;

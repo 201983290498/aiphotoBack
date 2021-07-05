@@ -94,8 +94,8 @@ public class _Base64PicController {
   }
 
   @GetMapping("/b64picture/setCollected")
-  public Boolean setLiked(@RequestParam("id") Long id){
-    return service.addCollected(id);
+  public Boolean setLiked(@RequestParam("id") Long id,@RequestParam("rank") int rank){
+    return service.addCollected(id,rank);
   }
 
   @GetMapping("/b64picture/quitCollected")

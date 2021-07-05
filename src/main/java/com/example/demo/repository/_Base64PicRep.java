@@ -37,5 +37,5 @@ public interface _Base64PicRep {
 
   Boolean quitCollected(Long id);
 
-  boolean addCollected(Long id);
+  boolean addCollected(Long id,int rank);
 }

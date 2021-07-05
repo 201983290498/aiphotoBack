@@ -17,9 +17,9 @@ public class _Base64Picture implements Comparable<_Base64Picture>{
   //多值属性
   private String persontag;
   private Boolean ishuman;
-  private Date data;
+  private Date time;
   private String remark;
-  private boolean collected;
+  private int collected;
 
   public _Base64Picture(Long id, String owner, String categy, String b64, Boolean ispublic, String picname, String persontag, Boolean ishuman) {
     this.id = id;
@@ -30,10 +30,9 @@ public class _Base64Picture implements Comparable<_Base64Picture>{
     this.picname = picname;
     this.persontag = persontag;
     this.ishuman = ishuman;
-    this.collected = false;
   }
 
-  public _Base64Picture(Long id, String owner, String categy, String b64, Boolean ispublic, String picname, String persontag, Boolean ishuman, Date data) {
+  public _Base64Picture(Long id, String owner, String categy, String b64, Boolean ispublic, String picname, String persontag, Boolean ishuman, Date time) {
     this.id = id;
     this.owner = owner;
     this.categy = categy;
@@ -42,8 +41,7 @@ public class _Base64Picture implements Comparable<_Base64Picture>{
     this.picname = picname;
     this.persontag = persontag;
     this.ishuman = ishuman;
-    this.data = data;
-    this.collected = false;
+    this.time = time;
   }
 
   public _Base64Picture() {
@@ -62,15 +60,15 @@ public class _Base64Picture implements Comparable<_Base64Picture>{
 
   @Override
   public int compareTo(_Base64Picture o) {
-    if (data.getTime() - o.data.getTime()==0)
+    if (time.getTime() - o.time.getTime()==0)
       return 0;
-    else if(data.getTime() - o.data.getTime()>0)
+    else if(time.getTime() - o.time.getTime()>0)
       return 1;
     else
       return -1;
   }
 
-  public _Base64Picture(Long id, String owner, String categy, String b64, Boolean ispublic, String picname, String persontag, Boolean ishuman, Date data, String remark) {
+  public _Base64Picture(Long id, String owner, String categy, String b64, Boolean ispublic, String picname, String persontag, Boolean ishuman, Date time, String remark) {
     this.id = id;
     this.owner = owner;
     this.categy = categy;
@@ -79,8 +77,38 @@ public class _Base64Picture implements Comparable<_Base64Picture>{
     this.picname = picname;
     this.persontag = persontag;
     this.ishuman = ishuman;
-    this.data = data;
+    this.time = time;
     this.remark = remark;
-    this.collected = false;
+  }
+
+  public _Base64Picture(Long id, String owner, String categy, String b64, Boolean ispublic, String picname, String persontag, Boolean ishuman, Date time, String remark, int collected) {
+    this.id = id;
+    this.owner = owner;
+    this.categy = categy;
+    this.b64 = b64;
+    this.ispublic = ispublic;
+    this.picname = picname;
+    this.persontag = persontag;
+    this.ishuman = ishuman;
+    this.time = time;
+    this.remark = remark;
+    this.collected = collected;
+  }
+
+  @Override
+  public String toString() {
+    return "_Base64Picture{" +
+            "id=" + id +
+            ", owner='" + owner + '\'' +
+            ", categy='" + categy + '\'' +
+            ", b64='" + b64 + '\'' +
+            ", ispublic=" + ispublic +
+            ", picname='" + picname + '\'' +
+            ", persontag='" + persontag + '\'' +
+            ", ishuman=" + ishuman +
+            ", data=" + time +
+            ", remark='" + remark + '\'' +
+            ", collected=" + collected +
+            '}';
   }
 }

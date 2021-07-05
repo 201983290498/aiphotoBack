@@ -169,8 +169,8 @@ public class _Base64PicService {
     return pictureRep.getClassfiedfrPics(username,categy);
   }
 
-  public boolean addCollected(Long id) {
-    return pictureRep.addCollected(id);
+  public boolean addCollected(Long id,int rank) {
+    return pictureRep.addCollected(id,rank);
   }
 
   public Boolean quitCollected(Long id) {
