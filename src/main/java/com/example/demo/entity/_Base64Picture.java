@@ -60,12 +60,13 @@ public class _Base64Picture implements Comparable<_Base64Picture>{
 
   @Override
   public int compareTo(_Base64Picture o) {
-    if (time.getTime() - o.time.getTime()==0)
-      return 0;
-    else if(time.getTime() - o.time.getTime()>0)
-      return 1;
-    else
-      return -1;
+//    if (time.getTime() - o.time.getTime()==0)
+//      return 0;
+//    else if(time.getTime() - o.time.getTime()>0)
+//      return 1;
+//    else
+//      return -1;
+    return (int) (id-o.id);
   }
 
   public _Base64Picture(Long id, String owner, String categy, String b64, Boolean ispublic, String picname, String persontag, Boolean ishuman, Date time, String remark) {
