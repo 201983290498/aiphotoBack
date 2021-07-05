@@ -104,6 +104,7 @@ public class _Base64PicService {
   private Boolean _addPicture(_Base64Picture picture) throws  IOException{
     picture.setId(pictureRep.findId());
     _faceProcess(picture);
+    System.out.println(picture.getId()+"的类别是"+picture.getCategy());
     return pictureRep.addInfo(picture);
   }
 
