@@ -65,7 +65,7 @@ public class _Base64PicRepApl implements _Base64PicRep {
 
   @Override
   public Long findId() {
-    Long exist = jdbcTemplate.queryForObject("select max(id) from b64picture_list",Long.class);
+    Long exist = jdbcTemplate.queryForObject("select ifnull(max(id),0) from b64picture_list",Long.class);
     if(exist == null)
       return 1L;
     else
