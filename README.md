@@ -19,5 +19,15 @@ database:
 
 - 正确添加图片，并获得多值属性categy
 - 正确使用 categy，获取第一属性和通过第二属性全局搜素图片
-         
+
+
+# 软件杯学习
+
+## 1.mysql语句的使用
+
+### isnull,ifnull,nullif
+
+- isnull(a),如果a是null返回true,否则返回false;
+- ifnull(a,b),如果a是null,输出b，否则输出a;
+- nullif(a，b),如果a=b返回null,否则输出a
 
