@@ -141,7 +141,10 @@ public class _Base64PicService {
 
   String AIClassifyProcess(_Base64Picture picture){
     String[] split = picture.getB64().split(",");
-    return onlineAIClassify.classifyPic(split[1]);
+    if(split[0].endsWith("webp;base64"))
+      return "others";
+    else
+      return onlineAIClassify.classifyPic(split[1]);
   }
 
   void _faceDeletePro(Long picId){
@@ -176,5 +179,9 @@ public class _Base64PicService {
 
   public Boolean quitCollected(Long id) {
     return pictureRep.quitCollected(id);
+  }
+
+  public Boolean setRemark(Long id, String remark) {
+    return pictureRep.setRemark(id,remark);
   }
 }

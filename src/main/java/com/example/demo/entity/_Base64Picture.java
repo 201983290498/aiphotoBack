@@ -66,7 +66,7 @@ public class _Base64Picture implements Comparable<_Base64Picture>{
 //      return 1;
 //    else
 //      return -1;
-    return (int) (id-o.id);
+    return (int) (o.id-id);
   }
 
   public _Base64Picture(Long id, String owner, String categy, String b64, Boolean ispublic, String picname, String persontag, Boolean ishuman, Date time, String remark) {

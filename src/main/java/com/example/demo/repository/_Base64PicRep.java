@@ -38,4 +38,6 @@ public interface _Base64PicRep {
   Boolean quitCollected(Long id);
 
   boolean addCollected(Long id,int rank);
+
+  Boolean setRemark(Long id, String remark);
 }

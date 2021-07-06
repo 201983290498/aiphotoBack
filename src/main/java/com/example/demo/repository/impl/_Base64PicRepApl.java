@@ -91,4 +91,14 @@ public class _Base64PicRepApl implements _Base64PicRep {
       return false;
     }
   }
+
+  @Override
+  public Boolean setRemark(Long id, String remark) {
+    if(findExistById(id)!=0L){
+      jdbcTemplate.update("update b64picture_list set remark=? where id = ?",remark,id);
+      return true;
+    }else{
+      return false;
+    }
+  }
 }

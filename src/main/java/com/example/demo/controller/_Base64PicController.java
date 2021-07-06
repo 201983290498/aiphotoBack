@@ -102,4 +102,12 @@ public class _Base64PicController {
   public Boolean delLiked(@RequestParam("id") Long id){
     return service.quitCollected(id);
   }
+
+  @PostMapping("/b64picture/setRemark")
+  public Boolean setRemark(@RequestBody Map<String,Object> data){
+    Integer id = (Integer) data.get("id");
+    Long id1 = Long.valueOf(id);
+    String remark = (String) data.get("remark");
+    return service.setRemark(id1,remark);
+  }
 }

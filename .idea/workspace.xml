@@ -4,19 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5f73d9b-3158-4235-a36e-c7ddae7920e0" name="默认变更列表" comment="修正了maven的相同包报错问题">
+    <list default="true" id="a5f73d9b-3158-4235-a36e-c7ddae7920e0" name="默认变更列表" comment="修正了对图片的比较函数">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/AI/tool/OnlineAIClassify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/AI/tool/OnlineAIClassify.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/_Base64PicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/_Base64PicController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/_Base64Picture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/_Base64Picture.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/_Base64PicRep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/_Base64PicRep.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/_Base64PicRepApl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/_Base64PicRepApl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/_Base64PicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/_Base64PicService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/demo/ClassifyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/ClassifyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/AI/tool/OnlineAIClassify.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/AI/tool/OnlineAIClassify.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controller/_Base64PicController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controller/_Base64PicController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/entity/_Base64Picture.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/entity/_Base64Picture.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/_Base64PicRep.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/_Base64PicRep.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/ImageClassficationRepApl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/ImageClassficationRepApl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/_Base64PicRepApl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/_Base64PicRepApl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/service/_Base64PicService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/service/_Base64PicService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/demo/ClassifyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/demo/ClassifyTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,10 +213,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ClassifyTest.Online_test" />
         <item itemvalue="JUnit.ClassifyTest" />
         <item itemvalue="JUnit.picTest.find" />
         <item itemvalue="JUnit.UserEx.test" />
-        <item itemvalue="JUnit.ClassifyTest.Online_test" />
         <item itemvalue="JUnit.ClassifyTest.test" />
       </list>
     </recent_temporary>
@@ -343,6 +345,9 @@
       <workItem from="1625322632757" duration="4752000" />
       <workItem from="1625331393085" duration="1315000" />
       <workItem from="1625365094701" duration="18566000" />
+      <workItem from="1625454419765" duration="3418000" />
+      <workItem from="1625486364685" duration="3806000" />
+      <workItem from="1625491441724" duration="8852000" />
     </task>
     <task id="LOCAL-00001" summary="hh">
       <created>1623344656914</created>
@@ -575,7 +580,84 @@
       <option name="project" value="LOCAL" />
       <updated>1625323612447</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="修改了collected的方法">
+      <created>1625454590635</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1625454590635</updated>
+    </task>
+    <task id="LOCAL-00035" summary="修改了collected的方法">
+      <created>1625454609483</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1625454609483</updated>
+    </task>
+    <task id="LOCAL-00036" summary="修正了如果图库一开始不存在照片可能出现的问题">
+      <created>1625491713385</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1625491713385</updated>
+    </task>
+    <task id="LOCAL-00037" summary="修正了每当图片加入以后自动打印图片的类别">
+      <created>1625491752613</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1625491752613</updated>
+    </task>
+    <task id="LOCAL-00038" summary="清除多余的控制台">
+      <created>1625491790654</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1625491790654</updated>
+    </task>
+    <task id="LOCAL-00039" summary="修正了读入properties的问题">
+      <created>1625491818454</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1625491818454</updated>
+    </task>
+    <task id="LOCAL-00040" summary="修正了读入properties的问题">
+      <created>1625491824741</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1625491824741</updated>
+    </task>
+    <task id="LOCAL-00041" summary="mysql中ifnull函数的学习">
+      <created>1625491845948</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1625491845948</updated>
+    </task>
+    <task id="LOCAL-00042" summary="none">
+      <created>1625491880962</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1625491880962</updated>
+    </task>
+    <task id="LOCAL-00043" summary="添加了对比较方法的学习集合类的比较，数组的比较，特定某个类自带的比较函数">
+      <created>1625493119911</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1625493119911</updated>
+    </task>
+    <task id="LOCAL-00044" summary="修正了对图片的比较函数">
+      <created>1625493448347</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1625493448347</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -604,12 +686,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="hh" />
-    <MESSAGE value="不会上传的文件" />
-    <MESSAGE value="在图片中添加时间属性" />
-    <MESSAGE value="添加了AI功能，只完成了Http请求,接收到数据待处理,图像在加入图库的时候依旧有待处理" />
-    <MESSAGE value="完善了和本地cifar10的连接，并尝试成功" />
-    <MESSAGE value="新增了python服务器的地址和图像的分类" />
     <MESSAGE value="将categy扩充为多指属性，重要程度高放在前面" />
     <MESSAGE value="修改了categy的匹配方式，适应categy变成多指属性，新增全局同类图像检索功能" />
     <MESSAGE value="新增多指属性" />
@@ -626,7 +702,16 @@
     <MESSAGE value="..." />
     <MESSAGE value="增加了收藏图片的功能" />
     <MESSAGE value="修正了maven的相同包报错问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="修正了maven的相同包报错问题" />
+    <MESSAGE value="修改了collected的方法" />
+    <MESSAGE value="修正了如果图库一开始不存在照片可能出现的问题" />
+    <MESSAGE value="修正了每当图片加入以后自动打印图片的类别" />
+    <MESSAGE value="清除多余的控制台" />
+    <MESSAGE value="修正了读入properties的问题" />
+    <MESSAGE value="mysql中ifnull函数的学习" />
+    <MESSAGE value="none" />
+    <MESSAGE value="添加了对比较方法的学习集合类的比较，数组的比较，特定某个类自带的比较函数" />
+    <MESSAGE value="修正了对图片的比较函数" />
+    <option name="LAST_COMMIT_MESSAGE" value="修正了对图片的比较函数" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -648,12 +733,12 @@
           <option name="timeStamp" value="60" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/repository/_Base64PicRep.java</url>
-          <line>32</line>
-          <properties class="com.example.demo.repository._Base64PicRep" method="getClassfiedfrPics">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/demo/ClassifyTest.java</url>
+          <line>27</line>
+          <properties class="com.example.demo.ClassifyTest" method="Online_test">
             <option name="EMULATED" value="true" />
           </properties>
-          <option name="timeStamp" value="133" />
+          <option name="timeStamp" value="157" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/PictureRepApl.java</url>
@@ -701,19 +786,29 @@
           <option name="timeStamp" value="139" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/service/_Base64PicService.java</url>
-          <line>141</line>
-          <option name="timeStamp" value="145" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/AI/tool/OnlineAIClassify.java</url>
-          <line>71</line>
-          <option name="timeStamp" value="147" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/controller/UserController.java</url>
           <line>34</line>
           <option name="timeStamp" value="150" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/demo/ClassifyTest.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="154" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/_Base64PicRepApl.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="164" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/controller/_Base64PicController.java</url>
+          <line>107</line>
+          <option name="timeStamp" value="168" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/controller/_Base64PicController.java</url>
+          <line>109</line>
+          <option name="timeStamp" value="169" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />

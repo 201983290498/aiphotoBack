@@ -71,12 +71,11 @@ public class OnlineAIClassify {
                         }
                 }
             }
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
+        }finally {
+            return ans;
         }
-        return ans;
     }
 
 
