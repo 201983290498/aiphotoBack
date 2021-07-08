@@ -60,23 +60,16 @@ public class _Base64PicController {
 //  }
   @PostMapping("/b64pictures/classified")
   public List<Long> getClassifiedPicFromPri(@RequestBody Map<String,Object> data){
-    String username = (String) data.get("username");
-    //待添加独立密码
-    String password = (String) data.get("pripassword");
-    if(userService.check_in_Ex(username,password)) {
+      String username = (String) data.get("username");
       String categy = (String) data.get("categy");
-      Boolean ispublic = data.containsKey("ispublic") ? true : (Boolean) data.get("ispublic");
       List<_Base64Picture> pictureList = null;
-      log.info(username + "正在获取" + categy + "相关的照片" + ispublic);
+      log.info(username + "正在获取" + categy + "全局相关的照片");
       pictureList = service.getClassifiedPic(username, categy);
       List<Long> numberlist = new LinkedList<>();
       for(_Base64Picture each:pictureList){
         numberlist.add(each.getId());
       }
       return numberlist;
-    }else{
-      return null;
-    }
   }
 
   @GetMapping("/b64picture")

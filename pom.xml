@@ -107,7 +107,26 @@
       <classifier>jdk15</classifier>
       <!-- jdk版本 -->
     </dependency>
-  </dependencies>
+
+<!--图片生成视频-->
+        <!-- https://mvnrepository.com/artifact/org.bytedeco/javacpp -->
+    <dependency>
+        <groupId>org.bytedeco</groupId>
+        <artifactId>javacpp</artifactId>
+        <version>1.2.4</version>
+    </dependency>
+        <!-- https://mvnrepository.com/artifact/org.bytedeco/javacv -->
+    <dependency>
+        <groupId>org.bytedeco</groupId>
+        <artifactId>javacv</artifactId>
+        <version>1.2</version>
+    </dependency>
+    <dependency>
+        <groupId>org.bytedeco</groupId>
+        <artifactId>javacv-platform</artifactId>
+        <version>1.5.3</version>
+    </dependency>
+    </dependencies>
 
 	<build>
 		<plugins>
