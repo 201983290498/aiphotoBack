@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5f73d9b-3158-4235-a36e-c7ddae7920e0" name="默认变更列表" comment="完善了人脸聚合所用到的参数">
+    <list default="true" id="a5f73d9b-3158-4235-a36e-c7ddae7920e0" name="默认变更列表" comment="完善了人脸聚合在共有和私有两种情况下的状态">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/AI/tool/FaceHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/AI/tool/FaceHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/FaceRecognitionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/FaceRecognitionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/_Base64PicRepApl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/_Base64PicRepApl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/ImageClassficationRepApl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/ImageClassficationRepApl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/AI/tool/FaceHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/AI/tool/FaceHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controller/FaceRecognitionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controller/FaceRecognitionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/_Base64PicRepApl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/_Base64PicRepApl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/ImageClassficationRepApl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/ImageClassficationRepApl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -854,6 +851,21 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/controller/FaceRecognitionController.java</url>
           <line>38</line>
           <option name="timeStamp" value="202" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/config/chartsConfiguration.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="207" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/UserRepositoryApl.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="210" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/ImageClassficationRepApl.java</url>
+          <line>100</line>
+          <option name="timeStamp" value="211" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

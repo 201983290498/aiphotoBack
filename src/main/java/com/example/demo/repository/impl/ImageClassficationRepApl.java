@@ -84,7 +84,7 @@ public class ImageClassficationRepApl implements ImageClassficationRep {
       if (exist != 0)
         return false;
       else {
-        if(remark.equals(""))
+        if(remark==null||remark.equals(""))
           jdbcTemplate.update("insert imageclassify(owner,categy,ispublic) value(?,?,?)", owner, categy,ispublic);
         else{
           jdbcTemplate.update("insert imageclassify(owner,categy,ispublic,remark) value(?,?,?,?)", owner, categy,ispublic,remark);
@@ -112,7 +112,7 @@ public class ImageClassficationRepApl implements ImageClassficationRep {
     list.add("动物");list.add("others");
 //    System.out.println(list);
     for (int i = 0; i < list.size(); i++) {
-      addInfo("admin", list.get(i),true,null);
+      addInfo("admin", list.get(i),true,"");
     }
   }
 
