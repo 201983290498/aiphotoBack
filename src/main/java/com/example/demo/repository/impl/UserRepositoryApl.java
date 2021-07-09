@@ -41,14 +41,18 @@ public class UserRepositoryApl implements UserRepository {
    */
   @Override
   public boolean insert(User user) {
+    jdbcTemplate.execute("use aiphoto");
     Long exist = jdbcTemplate.queryForObject("select count(*) from tbl_user where username=?", Long.class, user.getUsername());
     if (exist != 0)
       return false;
     else {
+      jdbcTemplate.execute("use aiphoto");
       user.setFaceSet(faceSetRep.addFaceSet(user.getUsername()+"Public", user.getUsername()+" FaceSet"));
       // 在用户表创建一条用户记录
       // 在图像分类表创建一条用户的记录
+
       jdbcTemplate.update("insert tbl_user(username,password,truName,email,faceSet) values(?,?,?,?,?)", user.getUsername(), user.getPassword(), user.getTruName(), user.getEmail(),user.getFaceSet());
+      jdbcTemplate.execute("use aiphoto");
       jdbcTemplate.update("insert imageclassify(owner,ispublic) values(?,?)",user.getUsername(),false);
       return true;
     }
@@ -56,10 +60,12 @@ public class UserRepositoryApl implements UserRepository {
 
   @Override
   public boolean insertEx(UserEx userEx) {
+    jdbcTemplate.execute("use aiphoto");
     Long exist = jdbcTemplate.queryForObject("select count(*) from tbl_userEx where username=?", Long.class, userEx.getUsername());
     if (exist != 0)
       return false;
     else {
+      jdbcTemplate.execute("use aiphoto");
       jdbcTemplate.update("insert tbl_userEx(username,pripassword) values(?,?)", userEx.getUsername(),userEx.getPripassword());
       return true;
     }
@@ -67,6 +73,7 @@ public class UserRepositoryApl implements UserRepository {
 
   @Override
   public boolean find(String name, String password) {
+    jdbcTemplate.execute("use aiphoto");
     Long exist = jdbcTemplate.queryForObject("select count(*) from tbl_user where username=? and password=?", Long.class, name, password);
     if(exist==0){
       return false;
@@ -77,6 +84,7 @@ public class UserRepositoryApl implements UserRepository {
 
   @Override
   public boolean findEx(String name, String pripassword) {
+    jdbcTemplate.execute("use aiphoto");
     Long exist = jdbcTemplate.queryForObject("select count(*) from tbl_userEx where username=? and pripassword=?", Long.class, name, pripassword);
     if(exist==0){
       return false;
@@ -87,8 +95,11 @@ public class UserRepositoryApl implements UserRepository {
 
   @Override
   public void createTable() {
+    jdbcTemplate.execute("CREATE DATABASE IF NOT EXISTS aiphoto");
+    jdbcTemplate.execute("use aiphoto");
     String sql = new StringBuilder().append("CREATE TABLE IF NOT EXISTS tbl_user(\n").append("`username` varchar(20) PRIMARY KEY,\n").append("`password` VARCHAR(20) NOT NULL,\n").append("`truName` VARCHAR(20) NOT NULL,\n").append("`email` varchar(30) not null,\n").append("faceSet Bigint default 0\n").append(")ENGINE=INNODB DEFAULT CHARSET=utf8;\n").toString();
     jdbcTemplate.update(sql);
+    jdbcTemplate.execute("use aiphoto");
     sql = new StringBuilder().append("CREATE TABLE IF NOT EXISTS `tbl_userEx` (\n").append("  `username` VARCHAR(20) NOT NULL,\n").append("  `pripassword` VARCHAR(40) NOT NULL,\n").append("  PRIMARY KEY (`username`)\n").append(") ENGINE=INNODB DEFAULT CHARSET=utf8").toString();
     jdbcTemplate.update(sql);
     Init();
@@ -97,12 +108,14 @@ public class UserRepositoryApl implements UserRepository {
   @Override
   public User getUser(String username) {
     User user  = null;
+    jdbcTemplate.execute("use aiphoto");
     user = jdbcTemplate.queryForObject("select * from tbl_user where username=?",new BeanPropertyRowMapper<User>(User.class),username);
     return user;
   }
 
   @Override
   public void Init() {
+    jdbcTemplate.execute("use aiphoto");
     Long exist = jdbcTemplate.queryForObject("select count(*) from tbl_user where username=?", Long.class,"admin");
     if(exist == 0L){
 //    初始化

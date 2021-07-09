@@ -4,12 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5f73d9b-3158-4235-a36e-c7ddae7920e0" name="默认变更列表" comment="完善了人脸聚合在共有和私有两种情况下的状态">
+    <list default="true" id="a5f73d9b-3158-4235-a36e-c7ddae7920e0" name="默认变更列表" comment="修复初始化添加分类时的问题">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/FaceRepApl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/FaceRepApl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/FaceSetRepApl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/FaceSetRepApl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/ImageClassficationRepApl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/ImageClassficationRepApl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/PicFaceRepApl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/PicFaceRepApl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/PictureRepApl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/PictureRepApl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/UserRepositoryApl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/UserRepositoryApl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/_Base64PicRepApl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/_Base64PicRepApl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/FaceRepApl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/FaceRepApl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/FaceSetRepApl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/FaceSetRepApl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/ImageClassficationRepApl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/ImageClassficationRepApl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/PicFaceRepApl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/PicFaceRepApl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/PictureRepApl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/PictureRepApl$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/PictureRepApl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/PictureRepApl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/UserRepositoryApl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/UserRepositoryApl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/_Base64PicRepApl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/_Base64PicRepApl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -351,13 +362,6 @@
       <workItem from="1625804433409" duration="7908000" />
       <workItem from="1625812660844" duration="11793000" />
     </task>
-    <task id="LOCAL-00001" summary="hh">
-      <created>1623344656914</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1623344656914</updated>
-    </task>
     <task id="LOCAL-00002" summary="hh">
       <created>1623344764094</created>
       <option name="number" value="00002" />
@@ -694,7 +698,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625823177136</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="修复初始化添加分类时的问题">
+      <created>1625837137977</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1625837137979</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -723,7 +734,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="新增多指属性" />
     <MESSAGE value="完善了图像分类的所有功能" />
     <MESSAGE value="新增独立密码开启全局图像分类的功能。" />
     <MESSAGE value="新扩展独立密码的注册，登入和验证功能，完善全局同类图片检索功能" />
@@ -748,7 +758,8 @@
     <MESSAGE value="修正了对图片的比较函数" />
     <MESSAGE value="." />
     <MESSAGE value="完善了人脸聚合所用到的参数" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善了人脸聚合所用到的参数" />
+    <MESSAGE value="修复初始化添加分类时的问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复初始化添加分类时的问题" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -834,7 +845,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/_Base64PicRepApl.java</url>
-          <line>96</line>
+          <line>107</line>
           <option name="timeStamp" value="164" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -864,8 +875,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/ImageClassficationRepApl.java</url>
-          <line>100</line>
+          <line>110</line>
           <option name="timeStamp" value="211" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/ImageClassficationRepApl.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="212" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

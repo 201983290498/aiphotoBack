@@ -21,6 +21,7 @@ public class FaceSetRepApl implements FaceSetRep {
 
   @Override
   public void creatTable() {
+    jdbcTemplate.execute("use aiphoto");
     String sql = new StringBuilder().append("CREATE TABLE IF NOT EXISTS faceset(\n").append("`faceStoreId` BIGINT NOT NULL PRIMARY KEY,\n").append("`cost` BIGINT NOT NULL,\n").append("`faceStoreName` VARCHAR(40) NOT NULL\n").append(")ENGINE=INNODB DEFAULT CHARSET=utf8;\n").toString();
     jdbcTemplate.update(sql);
   }
@@ -28,12 +29,14 @@ public class FaceSetRepApl implements FaceSetRep {
   @Override
   public FaceSet findById(Long id) {
     FaceSet faceSet = null;
+    jdbcTemplate.execute("use aiphoto");
     faceSet = jdbcTemplate.queryForObject("select * from faceset where faceStoreId = ?",new BeanPropertyRowMapper<FaceSet>(FaceSet.class),id);
     return faceSet;
   }
 
   @Override
   public Long findExistById(Long Id) {
+    jdbcTemplate.execute("use aiphoto");
     return jdbcTemplate.queryForObject("select count(*) from faceset where faceStoreId = ?",Long.class,Id);
   }
 
@@ -49,6 +52,7 @@ public class FaceSetRepApl implements FaceSetRep {
     JSONObject jsonObject = faceHandler.createdFacesSet(faceSetName, faceSetDesc);
     FaceSet faceSet = JSON.toJavaObject(jsonObject, FaceSet.class);
     id = faceSet.getFaceStoreId();
+    jdbcTemplate.execute("use aiphoto");
     jdbcTemplate.update("insert faceset(faceStoreId,faceStoreName,cost) values(?,?,?)",faceSet.getFaceStoreId(),faceSet.getFaceStoreName(),faceSet.getCost());
     return id;
   }
@@ -62,6 +66,7 @@ public class FaceSetRepApl implements FaceSetRep {
   public boolean deleteFaceSetById(Long faceStoreId) {
     Long exist = findExistById(faceStoreId);
     if(exist!=0L){
+      jdbcTemplate.execute("use aiphoto");
       jdbcTemplate.update("delete from faceset where faceStoreId = ? ", faceStoreId);
       faceHandler.deleteFaceSet(faceStoreId);
       return true;

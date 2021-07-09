@@ -15,12 +15,14 @@ public class FaceRepApl implements FaceRep {
   JdbcTemplate jdbcTemplate;
   @Override
   public boolean findById(Long Id) {
+    jdbcTemplate.execute("use aiphoto");
     return jdbcTemplate.queryForObject("select count(*) from face where faceId = ?",Long.class,Id)>0L;
   }
 
   @Override
   public boolean insert(Face face) {
     if(!findById(face.getFaceId())){
+      jdbcTemplate.execute("use aiphoto");
       return jdbcTemplate.update("insert face(faceId,faceSetId,faceName,number) values(?,?,?,?)",face.getFaceId(),face.getFaceSetId(),face.getFaceName(),face.getNumber())>0;
     }
     return false;
@@ -28,6 +30,7 @@ public class FaceRepApl implements FaceRep {
 
   @Override
   public boolean delete(Long faceId) {
+    jdbcTemplate.execute("use aiphoto");
     return jdbcTemplate.update("delete from face where faceId = ?",faceId)>0;
   }
 
@@ -35,23 +38,27 @@ public class FaceRepApl implements FaceRep {
   public Long changeNumber(Long faceId, int num) {
     Face face = findByFaceId(faceId);
     Long number = face.getNumber() + (long)num;
+    jdbcTemplate.execute("use aiphoto");
     jdbcTemplate.update("update face set number = ? where faceId = ?",number,faceId);
     return number;
   }
 
   @Override
   public List<Face> findByFaceSetId(Long faceSetId) {
+    jdbcTemplate.execute("use aiphoto");
     return jdbcTemplate.query("select * from face where faceSetId = ?",new BeanPropertyRowMapper<Face>(Face.class),faceSetId);
   }
 
   @Override
   public Face findByFaceId(Long Id) {
+    jdbcTemplate.execute("use aiphoto");
     Face face = jdbcTemplate.queryForObject("select * from face where faceId = ?", new BeanPropertyRowMapper<Face>(Face.class), Id);
     return face;
   }
 
   @Override
   public void createTable() {
+    jdbcTemplate.execute("use aiphoto");
     String sql = "CREATE TABLE IF NOT EXISTS face(\n" +
       "`faceId` BIGINT NOT NULL PRIMARY KEY,\n" +
       "`faceSetId` BIGINT NOT NULL,\n" +

@@ -30,6 +30,7 @@ public class PictureRepApl implements PictureRep {
 
   @Override
   public Long findExistById(Long Id) {
+    jdbcTemplate.execute("use aiphoto");
     return jdbcTemplate.queryForObject("select count(*) from picture_list where id = ?", Long.class, Id);
   }
 
@@ -42,6 +43,7 @@ public class PictureRepApl implements PictureRep {
   public Picture findById(Long Id) {
     Long exist = findExistById(Id);
     if(exist!=0){
+      jdbcTemplate.execute("use aiphoto");
       Picture picture = jdbcTemplate.queryForObject("select * from picture_list where id = ?",new BeanPropertyRowMapper<Picture>(Picture.class),Id);
       return picture;
     }else
@@ -57,6 +59,7 @@ public class PictureRepApl implements PictureRep {
   @Override
   public Boolean addInfoLocal(Picture picture) throws IOException {
 //    System.out.println(tableName);
+    jdbcTemplate.execute("use aiphoto");
     Long aLong = jdbcTemplate.queryForObject("select count(*) from picture_list where owner = ? and categy = ? and ispublic = ? and picname = ?", Long.class,picture.getOwner(), picture.getCategy(),picture.getIspublic(),picture.getPicname());
 //    System.out.println(aLong);
     if(aLong!=0){
@@ -68,6 +71,7 @@ public class PictureRepApl implements PictureRep {
     inputStream.close();
     FileInputStream inputStream1 = myPictureIOS.readImage(abspath);
     LobHandler lobHandler = new DefaultLobHandler();
+    jdbcTemplate.execute("use aiphoto");
     jdbcTemplate.execute("insert picture_list(owner,categy,ispublic,picname,personTag,ishuman,binarypic) values(?,?,?,?,?,?,?)",
       new AbstractLobCreatingPreparedStatementCallback(lobHandler) {
         @Override
@@ -88,6 +92,7 @@ public class PictureRepApl implements PictureRep {
 
   @Override
   public Boolean addInfoBybytes(Picture picture) throws IOException {
+    jdbcTemplate.execute("use aiphoto");
     jdbcTemplate.update("insert picture_list(owner,categy,ispublic,picname,personTag,ishuman,binarypic) values(?,?,?,?,?,?,?)",
       picture.getOwner(),picture.getCategy(), picture.getIspublic(),picture.getPicname(),picture.getPersontag(),picture.getIshuman(),picture.getBinarypic());
     return true;
@@ -97,6 +102,7 @@ public class PictureRepApl implements PictureRep {
   public Boolean deleteById(Long Id) {
     Long exist = findExistById(Id);
     if(exist!=0){
+      jdbcTemplate.execute("use aiphoto");
       jdbcTemplate.update("delete from picture_list where id = ? ", Id );
       return true;
     }else
@@ -105,16 +111,19 @@ public class PictureRepApl implements PictureRep {
 
   @Override
   public List<Picture> findList(String owner, boolean ispublic, String categy) {
+    jdbcTemplate.execute("use aiphoto");
     Long exist = jdbcTemplate.queryForObject("select count(*) from picture_list where owner = ? and ispublic =? and categy = ?",Long.class,owner,ispublic,categy);
     if(exist==0){
       return null;
     }else{
+      jdbcTemplate.execute("use aiphoto");
       return jdbcTemplate.query("select * from picture_list where owner = ? and ispublic = ? and categy = ? ", new BeanPropertyRowMapper<Picture>(Picture.class), owner, ispublic, categy);
     }
   }
 
   @Override
   public void createTable() {
+    jdbcTemplate.execute("use aiphoto");
     //自动生成二进制文件,可以用来存储图片的bytes数组。
     String sql = new StringBuilder().append("CREATE TABLE IF NOT EXISTS picture_list(\n").append("`id` BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,\n").append("`owner` VARCHAR(20) NOT NULL,\n").append("`categy` VARCHAR(20) NOT NULL,\n").append("`binarypic` MediumBlob NOT NULL,\n").append("`ispublic` BOOL DEFAULT TRUE,\n").append("`picname` VARCHAR(40) NOT NULL,\n").append("`persontag` VARCHAR(20) DEFAULT NULL,\n").append("`ishuman` BOOLEAN DEFAULT FALSE\n").append(")ENGINE=INNODB DEFAULT CHARSET=utf8;\n").toString();
     jdbcTemplate.update(sql);
