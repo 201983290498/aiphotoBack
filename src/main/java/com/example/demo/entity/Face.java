@@ -2,7 +2,6 @@ package com.example.demo.entity;
 
 import lombok.Data;
 
-@Data
 public class Face {
 
   private Long faceId;
@@ -25,6 +24,7 @@ public class Face {
     this.faceName = faceName;
     this.faceSetId = faceSetId;
     this.faceId = faceId;
+    this.number = 1;
   }
 
   public Face() {
@@ -34,6 +34,38 @@ public class Face {
     this.faceId = faceId;
     this.faceSetId = faceSetId;
     this.faceName = faceName;
+    this.number = number;
+  }
+
+  public Long getFaceId() {
+    return faceId;
+  }
+
+  public void setFaceId(Long faceId) {
+    this.faceId = faceId;
+  }
+
+  public Long getFaceSetId() {
+    return faceSetId;
+  }
+
+  public void setFaceSetId(Long faceSetId) {
+    this.faceSetId = faceSetId;
+  }
+
+  public String getFaceName() {
+    return faceName;
+  }
+
+  public void setFaceName(String faceName) {
+    this.faceName = faceName;
+  }
+
+  public int getNumber() {
+    return number;
+  }
+
+  public void setNumber(int number) {
     this.number = number;
   }
 }

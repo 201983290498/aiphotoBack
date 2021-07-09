@@ -21,7 +21,7 @@ public class OnlineAIClassify {
     private String SK;
     private Credential credentia;
     private IECloudClient eCloudClient;
-    private static String[] categy = {"人","动物","自然风景","建筑","交通工具"};
+    private static String[] categy = {"人物","动物","自然风景","建筑","交通工具"};
     private static String[] categy1 = {"人","儿童","妇女","婴儿","青年"};
     private static String[] categy2 = {"动物","鼠","牛","虎","兔","蛇","马","羊","鸡","猴","狗","猪","猫","鸟","鹰","虫","鹿","狐","犬","狼",
                                         "鹅","鸭","狮","蝶"};
@@ -73,9 +73,8 @@ public class OnlineAIClassify {
             }
         } catch (Exception e) {
             e.printStackTrace();
-        }finally {
-            return ans;
         }
+        return ans;
     }
 
 

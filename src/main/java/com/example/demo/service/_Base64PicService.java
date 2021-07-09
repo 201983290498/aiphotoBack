@@ -103,7 +103,13 @@ public class _Base64PicService {
   }
   private Boolean _addPicture(_Base64Picture picture) throws  IOException{
     picture.setId(pictureRep.findId());
-    _faceProcess(picture);
+    String categy = AIClassifyProcess(picture);
+    if(picture.getIspublic())//共有照片把预分类放到第一个
+      picture.setCategy(categy);
+    else//私有照片，把预测的结果写在后面
+      picture.setCategy(picture.getCategy()+";"+categy);
+    if(categy.equals("人物"))
+      _faceProcess(picture);
     System.out.println(picture.getId()+"的类别是"+picture.getCategy());
     return pictureRep.addInfo(picture);
   }
@@ -113,7 +119,6 @@ public class _Base64PicService {
    * @param picture : 对图片进行人脸检测
    */
   private void _faceProcess(_Base64Picture picture){
-    List<String> categyList = properties.getImgCategy();
     FaceDetect faceDetect = faceHandler.densityDetect(myPictureIOS.B64String2Bytes(picture));// 将图片base64转成byte[] 类型，然后检测人脸
     if(faceDetect != null) {//有人脸
       //获取当前人脸的人脸库，暂时处理为私有的。
@@ -129,14 +134,6 @@ public class _Base64PicService {
     }else{
       picture.setIshuman(false);
     }
-    String categy=categyList.get(0);
-    if(picture.getIshuman()==false){
-      categy = AIClassifyProcess(picture);
-    }
-    if(picture.getIspublic())//共有照片把预分类放到第一个
-      picture.setCategy(categy);
-    else//私有照片，把预测的结果写在后面
-      picture.setCategy(picture.getCategy()+";"+categy);
   }
 
   String AIClassifyProcess(_Base64Picture picture){

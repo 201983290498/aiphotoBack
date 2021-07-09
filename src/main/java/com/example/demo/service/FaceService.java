@@ -67,6 +67,7 @@ public class FaceService {
             }
           }
         }
+//        只保存最相似的图片
         picture.setPersontag(persontag);
       } catch (IOException e) {
         log.info(picture.getOwner() + "的图片" + picture.getPicname() + "截取人脸失败");
