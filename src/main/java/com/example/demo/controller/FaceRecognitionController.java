@@ -26,7 +26,8 @@ public class FaceRecognitionController {
 
     List<_Base64Picture> picList = null;
     List<Long> faceIdlist = new LinkedList<>();
-      log.info(picId+"匹配人脸置信度为下的图片"+confidence);
+    confidence = 0.56;
+    log.info(picId+"匹配人脸置信度为下的图片"+confidence);
     _Base64Picture pic = base64PicService.getPic(picId);
     if(pic==null||!pic.getIshuman()){
       return null;

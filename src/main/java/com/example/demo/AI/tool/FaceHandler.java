@@ -101,7 +101,7 @@ public class FaceHandler {
     Face face = null;
     try {
       response = aiFaceBody.createFaceToFile(Math.toIntExact(faceSetId), bytes, faceName, "null", null, null);
-      if(response == null)
+      if(!response.getState().equalsIgnoreCase("ok"))
         return null;
       AddFace addFace = JSONObject.toJavaObject(response.getCommonResult(), AddFace.class);
       face = new Face(addFace.getFaceName(),addFace.getFaceSetId(),addFace.getFaceId());

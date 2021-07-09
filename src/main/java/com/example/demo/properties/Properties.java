@@ -31,6 +31,9 @@ public class Properties {
   @Value("${AIFace.confidence}")
   private double confidence;
 
+  @Value("${AIFace.reConfidence}")
+  private double reConfidence;
+
   @Value("${AIFace.myurl}")
   private String AIURL;
 

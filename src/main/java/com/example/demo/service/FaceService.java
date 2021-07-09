@@ -40,11 +40,20 @@ public class FaceService {
       num++;//有人脸了
       try {//截取图片
         byte[] face = myPictureIOS.picCut(picture.getB64(),detail);
+        if(face==null){
+          System.out.println(picture.getId()+picture.getPicname()+"获取人脸失败");
+          num--;
+          continue;
+        }
         List<FaceMatch> list = faceHandler.faceSearch(face, facesetId + "");//在图库中搜素这张图片
         //按照不同等级添加人脸
         String persontag = picture.getPersontag();//设置person的人脸这个多指属性
-        if(list==null||list.get(0).getConfidence()<properties.getConfidence()){
+        if(list==null||list.get(0).getConfidence()<properties.getReConfidence()){
           Long faceId = addFace(facesetId,face,picture.getId()+"的第"+num+"个人脸");
+          if(faceId == null) {
+            num--;
+            continue;
+          }
           if(persontag == null)
             persontag = faceId +"";
           else
@@ -79,6 +88,8 @@ public class FaceService {
   //往人脸库中添加新的人脸
   public Long addFace(Long faceSet,byte[] face,String faceName){
     Face face1 = faceHandler.addFace(faceSet, face,faceName);
+    if(face1 == null)
+      return null;
     face1.setNumber(1);
     faceRep.insert(face1);
     return face1.getFaceId();
