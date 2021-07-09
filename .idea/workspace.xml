@@ -4,18 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5f73d9b-3158-4235-a36e-c7ddae7920e0" name="默认变更列表" comment=".">
+    <list default="true" id="a5f73d9b-3158-4235-a36e-c7ddae7920e0" name="默认变更列表" comment="完善了人脸聚合所用到的参数">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/AI/tool/OnlineAIClassify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/AI/tool/OnlineAIClassify.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/Face.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/Face.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/AI/tool/FaceHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/AI/tool/FaceHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/FaceRecognitionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/FaceRecognitionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/_Base64PicRepApl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/_Base64PicRepApl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/FaceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/FaceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/_Base64PicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/_Base64PicService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/AI/tool/OnlineAIClassify.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/AI/tool/OnlineAIClassify.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/entity/Face.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/entity/Face.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/AI/tool/FaceHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/AI/tool/FaceHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controller/FaceRecognitionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controller/FaceRecognitionController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/_Base64PicRepApl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/_Base64PicRepApl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/service/FaceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/service/FaceService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/service/_Base64PicService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/service/_Base64PicService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -355,7 +352,7 @@
       <workItem from="1625725071800" duration="4946000" />
       <workItem from="1625755578220" duration="2299000" />
       <workItem from="1625804433409" duration="7908000" />
-      <workItem from="1625812660844" duration="1025000" />
+      <workItem from="1625812660844" duration="11793000" />
     </task>
     <task id="LOCAL-00001" summary="hh">
       <created>1623344656914</created>
@@ -679,7 +676,28 @@
       <option name="project" value="LOCAL" />
       <updated>1625751576492</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary=".">
+      <created>1625814147780</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1625814147780</updated>
+    </task>
+    <task id="LOCAL-00048" summary=".">
+      <created>1625814622855</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1625814622855</updated>
+    </task>
+    <task id="LOCAL-00049" summary="完善了人脸聚合所用到的参数">
+      <created>1625823177136</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1625823177136</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -708,7 +726,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="修改了categy的匹配方式，适应categy变成多指属性，新增全局同类图像检索功能" />
     <MESSAGE value="新增多指属性" />
     <MESSAGE value="完善了图像分类的所有功能" />
     <MESSAGE value="新增独立密码开启全局图像分类的功能。" />
@@ -733,7 +750,8 @@
     <MESSAGE value="添加了对比较方法的学习集合类的比较，数组的比较，特定某个类自带的比较函数" />
     <MESSAGE value="修正了对图片的比较函数" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="完善了人脸聚合所用到的参数" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善了人脸聚合所用到的参数" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -828,29 +846,14 @@
           <option name="timeStamp" value="172" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/controller/_Base64PicController.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="173" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/service/FaceService.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="182" />
+          <line>40</line>
+          <option name="timeStamp" value="191" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/service/FaceService.java</url>
-          <line>80</line>
-          <option name="timeStamp" value="183" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/AI/tool/FaceHandler.java</url>
-          <line>106</line>
-          <option name="timeStamp" value="186" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/AI/tool/FaceHandler.java</url>
-          <line>100</line>
-          <option name="timeStamp" value="187" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/controller/FaceRecognitionController.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="202" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

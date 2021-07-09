@@ -86,7 +86,6 @@ public class FaceHandler {
     } catch (ClientException e) {
       e.printStackTrace();
     }
-    System.out.println(response.getCommonResult());
     FaceDetect faceDetect = JSON.toJavaObject(response.getCommonResult(),FaceDetect.class);
     return faceDetect;
   }

@@ -22,11 +22,10 @@ public class FaceRecognitionController {
   _Base64PicService base64PicService;
 
   @GetMapping("/face/collections")
-  public List<Long> getSimilarFace(@RequestParam("id") Long picId,@RequestParam(name="confidence", defaultValue = "0.85",required = false)double confidence ){
-
+  public List<Long> getSimilarFace(@RequestParam("id") Long picId,@RequestParam(name="confidence", defaultValue = "0.85",required = false)double confidence,@RequestParam("ispublic")boolean ispublic){
     List<_Base64Picture> picList = null;
     List<Long> faceIdlist = new LinkedList<>();
-    confidence = 0.56;
+    confidence = 0.59;
     log.info(picId+"匹配人脸置信度为下的图片"+confidence);
     _Base64Picture pic = base64PicService.getPic(picId);
     if(pic==null||!pic.getIshuman()){
@@ -36,7 +35,7 @@ public class FaceRecognitionController {
     String[] faceList = pic.getPersontag().split(",");
     for(String face:faceList)
       faceIdlist.add(Long.valueOf(face));
-    List<Long> pictureIds = picFaceService.findSimilar(faceIdlist,pic.getIspublic(),confidence);
+    List<Long> pictureIds = picFaceService.findSimilar(faceIdlist,!ispublic,confidence);
     return pictureIds;
   }
 }

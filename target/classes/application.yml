@@ -11,5 +11,6 @@ AIFace:
   AK: 02e07647f119456f9c4244024a0096c2
   SK: a0a78d491dbe447d82f4a0a683e23353
   confidence: 0.85
+  reConfidence: 0.60
   myurl: http://192.168.43.184:8899/imgCfy
 
