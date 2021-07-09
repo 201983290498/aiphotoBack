@@ -29,7 +29,6 @@ public class ImageClassficationRepApl implements ImageClassficationRep {
   public List<String> getCategy(String owner, boolean ispublic) {
     List<String> list = new LinkedList<>();
     jdbcTemplate.execute("use aiphoto");
-    jdbcTemplate.execute("use aiphoto");
     List<ImageClassfication> query = jdbcTemplate.query("select * from imageclassify where owner=? and ispublic = ?", new BeanPropertyRowMapper<ImageClassfication>(ImageClassfication.class), owner,ispublic);
     for(ImageClassfication each : query){
       if(!each.getCategy().equalsIgnoreCase("others"))
