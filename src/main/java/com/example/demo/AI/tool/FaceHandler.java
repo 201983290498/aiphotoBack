@@ -22,6 +22,7 @@ import org.springframework.web.client.RestTemplate;
 import java.io.IOException;
 import java.util.List;
 
+
 public class FaceHandler {
   private static AiFaceBody aiFaceBody;
 

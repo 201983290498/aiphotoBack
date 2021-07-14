@@ -4,12 +4,277 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5f73d9b-3158-4235-a36e-c7ddae7920e0" name="默认变更列表" comment="完善了人脸聚合在共有和私有两种情况下的状态">
+    <list default="true" id="a5f73d9b-3158-4235-a36e-c7ddae7920e0" name="默认变更列表" comment="设置连接数据库为系统库，然后自动创建数据库，执行语句">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ecloud_engine_sdk_engine_sdk_1_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ecloud_java_sdk_ai_java_sdk_ai_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/css/app.222460db39a9870590ea70f2ab11fd43.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/css/app.222460db39a9870590ea70f2ab11fd43.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/fonts/element-icons.535877f.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/fonts/element-icons.732389d.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/fonts/fa-brands-400.099a955.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/fonts/fa-brands-400.30cc681.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/fonts/fa-brands-400.3b89dd1.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/fonts/fa-brands-400.f730768.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/fonts/fa-regular-400.1f77739.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/fonts/fa-regular-400.7124eb5.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/fonts/fa-regular-400.7630483.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/fonts/fa-regular-400.f0f8230.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/fonts/fa-solid-900.1042e8c.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/fonts/fa-solid-900.605ed79.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/fonts/fa-solid-900.9fe5a17.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/fonts/fa-solid-900.e8a427e.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/fonts/iconfont.13c04ac.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/fonts/iconfont.cb9e813.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/fonts/iconfont.ea4ca9a.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/icon/backgorud1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/icon/background3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/icon/confirm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/icon/delete.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/icon/fileIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/icon/mainbackground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/img/background3.49a5a4b.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/img/delete.47f976a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/img/fa-brands-400.ba7ed55.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/img/fa-regular-400.0bb4284.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/img/fa-solid-900.376c1f9.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/js/0.c2b32132921006f3ec8d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/js/0.c2b32132921006f3ec8d.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/js/1.53902ad2e3bb962d2473.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/js/1.53902ad2e3bb962d2473.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/js/2.325ee7ce41d81e4998c4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/js/2.325ee7ce41d81e4998c4.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/js/3.c25eef74810bdbdba7ba.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/js/3.c25eef74810bdbdba7ba.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/js/4.9efd28dc0fddf7e08941.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/js/4.9efd28dc0fddf7e08941.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/js/5.07154678db213ce9cc44.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/js/5.07154678db213ce9cc44.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/js/6.edf26a291b878ccc7659.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/js/6.edf26a291b878ccc7659.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/js/app.49fa2e8462c898cb2310.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/js/app.49fa2e8462c898cb2310.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/js/manifest.e41eb1d2617161308d9b.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/js/manifest.e41eb1d2617161308d9b.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/js/vendor.82ba5d9f98b0c2358046.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/static/js/vendor.82ba5d9f98b0c2358046.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_artoolkitplus_2_3_1_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_artoolkitplus_android_arm64_2_3_1_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_artoolkitplus_android_arm_2_3_1_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_artoolkitplus_android_x86_2_3_1_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_artoolkitplus_android_x86_64_2_3_1_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_artoolkitplus_linux_arm64_2_3_1_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_artoolkitplus_linux_armhf_2_3_1_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_artoolkitplus_linux_ppc64le_2_3_1_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_artoolkitplus_linux_x86_2_3_1_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_artoolkitplus_linux_x86_64_2_3_1_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_artoolkitplus_macosx_x86_64_2_3_1_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_artoolkitplus_platform_2_3_1_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_artoolkitplus_windows_x86_2_3_1_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_artoolkitplus_windows_x86_64_2_3_1_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_ffmpeg_4_2_2_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_ffmpeg_android_arm64_4_2_2_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_ffmpeg_android_arm_4_2_2_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_ffmpeg_android_x86_4_2_2_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_ffmpeg_android_x86_64_4_2_2_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_ffmpeg_linux_arm64_4_2_2_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_ffmpeg_linux_armhf_4_2_2_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_ffmpeg_linux_ppc64le_4_2_2_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_ffmpeg_linux_x86_4_2_2_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_ffmpeg_linux_x86_64_4_2_2_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_ffmpeg_macosx_x86_64_4_2_2_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_ffmpeg_platform_4_2_2_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_ffmpeg_windows_x86_4_2_2_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_ffmpeg_windows_x86_64_4_2_2_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_flandmark_1_07_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_flandmark_android_arm64_1_07_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_flandmark_android_arm_1_07_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_flandmark_android_x86_1_07_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_flandmark_android_x86_64_1_07_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_flandmark_linux_arm64_1_07_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_flandmark_linux_armhf_1_07_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_flandmark_linux_ppc64le_1_07_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_flandmark_linux_x86_1_07_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_flandmark_linux_x86_64_1_07_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_flandmark_macosx_x86_64_1_07_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_flandmark_platform_1_07_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_flandmark_windows_x86_1_07_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_flandmark_windows_x86_64_1_07_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_flycapture_2_13_3_31_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_flycapture_linux_arm64_2_13_3_31_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_flycapture_linux_armhf_2_13_3_31_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_flycapture_linux_x86_2_13_3_31_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_flycapture_linux_x86_64_2_13_3_31_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_flycapture_platform_2_13_3_31_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_flycapture_windows_x86_2_13_3_31_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_flycapture_windows_x86_64_2_13_3_31_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_javacpp_1_2_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_javacpp_android_arm64_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_javacpp_android_arm_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_javacpp_android_x86_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_javacpp_android_x86_64_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_javacpp_ios_arm64_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_javacpp_ios_x86_64_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_javacpp_linux_arm64_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_javacpp_linux_armhf_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_javacpp_linux_ppc64le_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_javacpp_linux_x86_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_javacpp_linux_x86_64_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_javacpp_macosx_x86_64_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_javacpp_platform_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_javacpp_presets_artoolkitplus_2_3_1_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_javacpp_presets_artoolkitplus_windows_x86_64_2_3_1_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_javacpp_presets_ffmpeg_3_0_2_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_javacpp_presets_ffmpeg_windows_x86_64_3_0_2_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_javacpp_presets_flandmark_1_07_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_javacpp_presets_flandmark_windows_x86_64_1_07_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_javacpp_presets_flycapture_2_9_3_43_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_javacpp_presets_flycapture_windows_x86_64_2_9_3_43_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_javacpp_presets_libdc1394_2_2_4_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_javacpp_presets_libdc1394_windows_x86_64_2_2_4_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_javacpp_presets_libfreenect_0_5_3_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_javacpp_presets_libfreenect_windows_x86_64_0_5_3_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_javacpp_presets_opencv_3_1_0_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_javacpp_presets_opencv_windows_x86_64_3_1_0_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_javacpp_presets_videoinput_0_200_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_javacpp_presets_videoinput_windows_x86_64_0_200_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_javacpp_windows_x86_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_javacpp_windows_x86_64_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_javacv_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_javacv_platform_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_leptonica_1_79_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_leptonica_android_arm64_1_79_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_leptonica_android_arm_1_79_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_leptonica_android_x86_1_79_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_leptonica_android_x86_64_1_79_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_leptonica_linux_arm64_1_79_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_leptonica_linux_armhf_1_79_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_leptonica_linux_ppc64le_1_79_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_leptonica_linux_x86_1_79_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_leptonica_linux_x86_64_1_79_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_leptonica_macosx_x86_64_1_79_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_leptonica_platform_1_79_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_leptonica_windows_x86_1_79_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_leptonica_windows_x86_64_1_79_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_libdc1394_2_2_6_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_libdc1394_linux_arm64_2_2_6_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_libdc1394_linux_armhf_2_2_6_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_libdc1394_linux_ppc64le_2_2_6_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_libdc1394_linux_x86_2_2_6_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_libdc1394_linux_x86_64_2_2_6_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_libdc1394_macosx_x86_64_2_2_6_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_libdc1394_platform_2_2_6_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_libdc1394_windows_x86_2_2_6_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_libdc1394_windows_x86_64_2_2_6_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_libfreenect2_0_2_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_libfreenect2_linux_x86_0_2_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_libfreenect2_linux_x86_64_0_2_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_libfreenect2_macosx_x86_64_0_2_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_libfreenect2_platform_0_2_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_libfreenect2_windows_x86_64_0_2_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_libfreenect_0_5_7_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_libfreenect_linux_arm64_0_5_7_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_libfreenect_linux_armhf_0_5_7_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_libfreenect_linux_ppc64le_0_5_7_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_libfreenect_linux_x86_0_5_7_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_libfreenect_linux_x86_64_0_5_7_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_libfreenect_macosx_x86_64_0_5_7_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_libfreenect_platform_0_5_7_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_libfreenect_windows_x86_0_5_7_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_libfreenect_windows_x86_64_0_5_7_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_librealsense2_2_29_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_librealsense2_linux_x86_2_29_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_librealsense2_linux_x86_64_2_29_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_librealsense2_macosx_x86_64_2_29_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_librealsense2_platform_2_29_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_librealsense2_windows_x86_2_29_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_librealsense2_windows_x86_64_2_29_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_librealsense_1_12_4_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_librealsense_linux_x86_1_12_4_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_librealsense_linux_x86_64_1_12_4_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_librealsense_macosx_x86_64_1_12_4_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_librealsense_platform_1_12_4_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_librealsense_windows_x86_1_12_4_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_librealsense_windows_x86_64_1_12_4_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_openblas_0_3_9_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_openblas_android_arm64_0_3_9_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_openblas_android_arm_0_3_9_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_openblas_android_x86_0_3_9_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_openblas_android_x86_64_0_3_9_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_openblas_ios_arm64_0_3_9_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_openblas_ios_x86_64_0_3_9_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_openblas_linux_arm64_0_3_9_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_openblas_linux_armhf_0_3_9_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_openblas_linux_ppc64le_0_3_9_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_openblas_linux_x86_0_3_9_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_openblas_linux_x86_64_0_3_9_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_openblas_macosx_x86_64_0_3_9_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_openblas_platform_0_3_9_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_openblas_windows_x86_0_3_9_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_openblas_windows_x86_64_0_3_9_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_opencv_4_3_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_opencv_android_arm64_4_3_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_opencv_android_arm_4_3_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_opencv_android_x86_4_3_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_opencv_android_x86_64_4_3_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_opencv_ios_arm64_4_3_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_opencv_ios_x86_64_4_3_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_opencv_linux_arm64_4_3_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_opencv_linux_armhf_4_3_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_opencv_linux_ppc64le_4_3_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_opencv_linux_x86_4_3_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_opencv_linux_x86_64_4_3_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_opencv_macosx_x86_64_4_3_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_opencv_platform_4_3_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_opencv_windows_x86_4_3_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_opencv_windows_x86_64_4_3_0_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_tesseract_4_1_1_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_tesseract_android_arm64_4_1_1_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_tesseract_android_arm_4_1_1_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_tesseract_android_x86_4_1_1_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_tesseract_android_x86_64_4_1_1_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_tesseract_linux_arm64_4_1_1_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_tesseract_linux_armhf_4_1_1_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_tesseract_linux_ppc64le_4_1_1_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_tesseract_linux_x86_4_1_1_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_tesseract_linux_x86_64_4_1_1_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_tesseract_macosx_x86_64_4_1_1_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_tesseract_platform_4_1_1_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_tesseract_windows_x86_4_1_1_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_tesseract_windows_x86_64_4_1_1_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_videoinput_0_200_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_videoinput_platform_0_200_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_videoinput_windows_x86_0_200_1_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_videoinput_windows_x86_64_0_200_1_5_3.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/AI/tool/FaceHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/AI/tool/FaceHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Moive/JpgToAvi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Moive/demo02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/FaceRepApl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/FaceRepApl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/FaceSetRepApl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/FaceSetRepApl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/ImageClassficationRepApl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/ImageClassficationRepApl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/PicFaceRepApl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/PicFaceRepApl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/PictureRepApl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/PictureRepApl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/UserRepositoryApl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/UserRepositoryApl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/_Base64PicRepApl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/_Base64PicRepApl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/_Base64PicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/_Base64PicService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/AI/tool/FaceHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/AI/tool/FaceHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/DemoApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/DemoApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/Moive/JpgToAvi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/Moive/demo02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/FaceRepApl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/FaceRepApl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/FaceSetRepApl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/FaceSetRepApl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/ImageClassficationRepApl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/ImageClassficationRepApl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/PicFaceRepApl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/PicFaceRepApl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/PictureRepApl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/PictureRepApl$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/PictureRepApl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/PictureRepApl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/UserRepositoryApl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/UserRepositoryApl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/_Base64PicRepApl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/impl/_Base64PicRepApl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/service/_Base64PicService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/service/_Base64PicService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +300,7 @@
       </GitPushTagMode>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -78,7 +344,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
+    <property name="Repository.Attach.Sources" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -88,12 +354,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pictures" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="库" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.45057473" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="ReaderModeSettings">
@@ -101,6 +367,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\code\github\respository\aiphoto\demo\src\main\resources\static" />
       <recent name="E:\code\github\respository\aiphoto\demo\pictures" />
       <recent name="C:\Users\coder\Desktop\demo\src\main\java\com\example\demo\AI\entity" />
       <recent name="C:\Users\coder\Desktop\demo\pictures" />
@@ -204,6 +471,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.ClassifyTest" />
+      <item itemvalue="JUnit.ClassifyTest.Online_test" />
+      <item itemvalue="JUnit.picTest.find" />
+      <item itemvalue="JUnit.UserEx.test" />
+      <item itemvalue="Spring Boot.DemoApplication (1)" />
+      <item itemvalue="应用程序.JpgToAvi" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="应用程序.JpgToAvi" />
@@ -350,13 +625,16 @@
       <workItem from="1625755578220" duration="2299000" />
       <workItem from="1625804433409" duration="7908000" />
       <workItem from="1625812660844" duration="11793000" />
-    </task>
-    <task id="LOCAL-00001" summary="hh">
-      <created>1623344656914</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1623344656914</updated>
+      <workItem from="1625899423672" duration="11406000" />
+      <workItem from="1625931052654" duration="2124000" />
+      <workItem from="1625978271847" duration="3018000" />
+      <workItem from="1625982264882" duration="1178000" />
+      <workItem from="1626002472304" duration="1858000" />
+      <workItem from="1626064317733" duration="808000" />
+      <workItem from="1626088086666" duration="1921000" />
+      <workItem from="1626170680664" duration="2164000" />
+      <workItem from="1626191210131" duration="2072000" />
+      <workItem from="1626254937272" duration="263000" />
     </task>
     <task id="LOCAL-00002" summary="hh">
       <created>1623344764094</created>
@@ -694,7 +972,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625823177136</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="修复初始化添加分类时的问题">
+      <created>1625837137977</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1625837137979</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -723,7 +1008,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="新增多指属性" />
     <MESSAGE value="完善了图像分类的所有功能" />
     <MESSAGE value="新增独立密码开启全局图像分类的功能。" />
     <MESSAGE value="新扩展独立密码的注册，登入和验证功能，完善全局同类图片检索功能" />
@@ -748,7 +1032,8 @@
     <MESSAGE value="修正了对图片的比较函数" />
     <MESSAGE value="." />
     <MESSAGE value="完善了人脸聚合所用到的参数" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善了人脸聚合所用到的参数" />
+    <MESSAGE value="修复初始化添加分类时的问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复初始化添加分类时的问题" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -776,6 +1061,14 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="157" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/controller/_Base64PicController.java</url>
+          <line>83</line>
+          <properties class="com.example.demo.controller._Base64PicController" method="delPicById">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="216" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/PictureRepApl.java</url>
@@ -808,11 +1101,6 @@
           <option name="timeStamp" value="127" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/service/UserService.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="135" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/UserRepositoryApl.java</url>
           <line>58</line>
           <option name="timeStamp" value="136" />
@@ -823,19 +1111,9 @@
           <option name="timeStamp" value="139" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/controller/UserController.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="150" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/example/demo/ClassifyTest.java</url>
           <line>28</line>
           <option name="timeStamp" value="154" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/_Base64PicRepApl.java</url>
-          <line>96</line>
-          <option name="timeStamp" value="164" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/Moive/JpgToAvi.java</url>
@@ -848,24 +1126,19 @@
           <option name="timeStamp" value="191" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/controller/FaceRecognitionController.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="202" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/config/chartsConfiguration.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="207" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/UserRepositoryApl.java</url>
           <line>89</line>
           <option name="timeStamp" value="210" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/repository/impl/ImageClassficationRepApl.java</url>
-          <line>100</line>
+          <line>110</line>
           <option name="timeStamp" value="211" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/service/_Base64PicService.java</url>
+          <line>153</line>
+          <option name="timeStamp" value="214" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -880,5 +1153,9 @@
         <watch expression="response.getBody()" language="JAVA" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

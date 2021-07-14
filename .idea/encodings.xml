@@ -8,5 +8,14 @@
     <file url="file://$PROJECT_DIR$/repository/Jim2mov.jar" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/repository/ecloud-engine-sdk-1.0.0-jar-with-dependencies.jar" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/dist" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/dist/index.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/dist/static/css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/dist/static/fonts" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/dist/static/icon" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/dist/static/img" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/dist/static/js/manifest.e41eb1d2617161308d9b.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/dist/static/js/manifest.e41eb1d2617161308d9b.js.map" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/dist/static/js/vendor.82ba5d9f98b0c2358046.js.map" charset="GBK" />
   </component>
 </project>

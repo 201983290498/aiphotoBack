@@ -104,12 +104,17 @@ public class _Base64PicService {
   private Boolean _addPicture(_Base64Picture picture) throws  IOException{
     picture.setId(pictureRep.findId());
     String categy = AIClassifyProcess(picture);
-    if(picture.getIspublic())//共有照片把预分类放到第一个
+    if(picture.getIspublic()) {//共有照片把预分类放到第一个
       picture.setCategy(categy);
+    }
     else//私有照片，把预测的结果写在后面
       picture.setCategy(picture.getCategy()+";"+categy);
-    if(categy.equals("人物"))
+    if(categy.equals("人物")) {
       _faceProcess(picture);
+      picture.setIshuman(true);
+    }else{
+      picture.setIshuman(false);
+    }
     System.out.println(picture.getId()+"的类别是"+picture.getCategy());
     return pictureRep.addInfo(picture);
   }
@@ -146,7 +151,7 @@ public class _Base64PicService {
 
   void _faceDeletePro(Long picId){
     _Base64Picture picture = pictureRep.findById(picId);
-    if(picture == null||!picture.getIshuman())
+    if(picture == null||picture.getIshuman()==null||!picture.getIshuman())
       return;
     List<Long> facelist = picFaceService.delete(picId);//返回人脸
     for(Long faceId:facelist){

@@ -1,0 +1,2 @@
+webpackJsonp([3],{"5REH":function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0});var r={render:function(){var e=this.$createElement;return(this._self._c||e)("div")},staticRenderFns:[]};var a=t("VU/8")({name:"Addcategy",data:function(){}},r,!1,function(e){t("hzpU")},null,null);n.default=a.exports},hzpU:function(e,n){}});
+//# sourceMappingURL=3.c25eef74810bdbdba7ba.js.map
