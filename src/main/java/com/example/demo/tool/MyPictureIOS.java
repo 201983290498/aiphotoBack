@@ -1,9 +1,7 @@
 package com.example.demo.tool;
 
-import com.example.demo.AI.entity.Rectange;
-import com.example.demo.AI.entity.tool.detect.Point;
+
 import com.example.demo.AI.entity.tool.facedetect.FaceDetails;
-import com.example.demo.entity.PicFace;
 import com.example.demo.entity.Picture;
 import com.example.demo.entity._Base64Picture;
 import lombok.Data;
@@ -11,7 +9,6 @@ import lombok.Data;
 import javax.imageio.ImageIO;
 import javax.imageio.stream.FileImageOutputStream;
 import javax.imageio.stream.ImageInputStream;
-import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.*;
 import java.util.Base64;
